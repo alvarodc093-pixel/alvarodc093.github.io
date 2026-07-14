@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&Aacute;lvaro Domingo Cord&oacute;n | Data Analyst</title>
+<meta name="description" content="CV de &Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst. Python, SQL, Power BI, Streamlit. An&aacute;lisis de datos, dashboards interactivos y visualizaci&oacute;n.">
+<meta property="og:title" content="&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst">
+<meta property="og:description" content="CV interactivo de &Aacute;lvaro Domingo Cord&oacute;n, Data Analyst. Python, SQL, Power BI y visualizaci&oacute;n de datos.">
+<meta property="og:image" content="https://alvarodc093.github.io/profile.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alvarodc093.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst">
+<meta name="twitter:description" content="CV interactivo de &Aacute;lvaro Domingo Cord&oacute;n, Data Analyst. Python, SQL, Power BI y visualizaci&oacute;n de datos.">
+<meta name="twitter:image" content="https://alvarodc093.github.io/profile.jpg">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a56db'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-size='15' font-weight='700' fill='%23fff'%3EAD%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --primary: #1a56db;
+  --primary-dark: #1141a0;
+  --primary-light: #e8eefb;
+  --bg: #f8f9fc;
+  --surface: #ffffff;
+  --text: #1a1a2e;
+  --text-light: #5a5a7a;
+  --border: #e0e5f0;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(26,86,219,0.08);
+  --shadow-hover: 0 6px 24px rgba(26,86,219,0.14);
+  --transition: 0.25s ease;
+}
+[data-theme="dark"] {
+  --primary: #3b82f6;
+  --primary-dark: #60a5fa;
+  --primary-light: #1e293b;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #e2e8f0;
+  --text-light: #94a3b8;
+  --border: #334155;
+  --shadow: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-hover: 0 6px 24px rgba(0,0,0,0.5);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+section { padding: 60px 0; }
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--primary);
+}
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #0f1b3d 0%, #1a3a7a 50%, #1a56db 100%);
+  color: #fff;
+  padding: 48px 0 52px;
+  position: relative;
+}
+.lang-switch {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  display: flex;
+  gap: 4px;
+  z-index: 5;
+}
+.lang-switch button {
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  transition: all var(--transition);
+}
+.lang-switch button:hover { background: rgba(255,255,255,0.25); }
+.lang-switch button.active { background: rgba(255,255,255,0.9); border-color: #fff; }
+.theme-btn { font-size: 1rem !important; }
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255,255,255,0.25);
+  flex-shrink: 0;
+}
+.header-info { flex: 1; min-width: 0; }
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+header .title {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+header .contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin-top: 16px;
+}
+header .contact-bar a, header .contact-bar .contact-phone {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: color var(--transition);
+}
+header .contact-bar a:hover { color: #fff; }
+header .contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+
+/* Profile */
+.profile-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  margin-top: -24px;
+  position: relative;
+  z-index: 2;
+}
+.profile-card p { color: var(--text-light); font-size: 1rem; }
+
+/* Timeline */
+.timeline { position: relative; padding-left: 32px; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--border);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 20px;
+}
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 3px solid var(--primary-light);
+}
+.timeline-item .date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.timeline-item h3 { font-size: 1.1rem; margin-bottom: 2px; }
+.timeline-item .company { color: var(--text-light); font-size: 0.9rem; margin-bottom: 8px; }
+.timeline-item p { color: var(--text-light); font-size: 0.9rem; }
+
+/* Education */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.edu-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition);
+}
+.edu-card:hover { box-shadow: var(--shadow-hover); }
+.edu-card h3 { font-size: 1rem; margin-bottom: 4px; }
+.edu-card .institution { color: var(--primary); font-weight: 600; font-size: 0.85rem; }
+.edu-card .year { color: var(--text-light); font-size: 0.82rem; margin-top: 8px; }
+
+/* Skills */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+.skill-tag.advanced {
+  background: var(--primary);
+  color: #fff;
+}
+.skill-tag.intermediate {
+  background: var(--primary-light);
+  color: var(--primary-dark);
+}
+.skill-tag small {
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.85;
+  padding: 1px 8px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.2);
+}
+.skill-tag.intermediate small {
+  background: rgba(26,86,219,0.1);
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.project-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+.project-card .project-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--primary);
+  background: var(--primary-light);
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.project-card h3 { font-size: 1rem; margin-bottom: 8px; }
+.project-card p { font-size: 0.88rem; color: var(--text-light); margin-bottom: 12px; }
+.project-card .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.project-card .tech-stack span {
+  font-size: 0.75rem;
+  background: var(--bg);
+  padding: 2px 10px;
+  border-radius: 20px;
+  color: var(--text-light);
+}
+.demo-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  background: var(--primary);
+  color: #fff;
+  transition: background var(--transition), transform var(--transition);
+}
+.demo-btn:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+/* More repos (dynamic) */
+.repo-toggle {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  width: 100%;
+  text-align: left;
+  transition: border-color var(--transition), background var(--transition);
+}
+.repo-toggle:hover { border-color: var(--primary); background: var(--primary-light); }
+.repo-toggle-arrow {
+  font-size: 0.8rem;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+.repo-grid {
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.repo-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.repo-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+.repo-card .repo-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.repo-card .repo-desc {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  flex: 1;
+}
+.repo-card .repo-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.78rem;
+}
+.repo-card .repo-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.repo-card .repo-lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.repo-card .repo-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-light);
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.contact-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.contact-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.contact-card .contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+.contact-card .contact-label {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+.contact-card .contact-value {
+  font-size: 0.92rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 32px 0;
+  font-size: 0.82rem;
+  color: var(--text-light);
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header { padding: 44px 0 36px; }
+  .header-content { flex-direction: column; gap: 20px; text-align: center; }
+  .profile-photo { width: 130px; height: 130px; }
+  header h1 { font-size: 2rem; }
+  header .title { padding-bottom: 14px; }
+  .lang-switch { top: 10px; right: 16px; }
+  .profile-card { margin-top: -16px; padding: 24px; }
+  section { padding: 40px 0; }
+  .section-title { font-size: 1.3rem; }
+  .timeline { padding-left: 24px; }
+  header .contact-bar { justify-content: center; gap: 8px 18px; margin-top: 14px; }
+  header .contact-bar a, header .contact-bar .contact-phone { font-size: 0.82rem; }
+}
+@media (max-width: 480px) {
+  header { padding: 38px 0 24px; }
+  .header-content { gap: 14px; }
+  .profile-photo { width: 110px; height: 110px; }
+  header h1 { font-size: 1.5rem; }
+  header .contact-bar { flex-direction: column; align-items: center; gap: 6px; }
+  .container { padding: 0 16px; }
+}
+
+/* Terminal easter egg */
+.term-trigger {
+  display: inline-block;
+  cursor: pointer;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-left: 8px;
+  transition: color var(--transition);
+  user-select: none;
+}
+.term-trigger:hover { color: var(--primary); }
+.term-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+.term-overlay.open { display: flex; }
+.term-body {
+  background: #0a0a0a;
+  border: 1px solid #1a3a3a;
+  border-radius: 8px 8px 0 0;
+  padding: 16px 16px 8px;
+  width: 90%;
+  max-width: 680px;
+  height: 340px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  color: #00ff41;
+  line-height: 1.5;
+  box-shadow: 0 0 40px rgba(0,255,65,0.08);
+}
+.term-body::-webkit-scrollbar { width: 6px; }
+.term-body::-webkit-scrollbar-track { background: #0a0a0a; }
+.term-body::-webkit-scrollbar-thumb { background: #1a3a3a; border-radius: 3px; }
+.term-line { white-space: pre-wrap; word-break: break-word; margin-bottom: 2px; }
+.term-prompt { color: #00ff41; }
+.term-cursor {
+  animation: blink 1s step-end infinite;
+  color: #00ff41;
+}
+@keyframes blink { 50% { opacity: 0; } }
+.term-input-line {
+  background: #0a0a0a;
+  border: 1px solid #1a3a3a;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  padding: 8px 16px 12px;
+  width: 90%;
+  max-width: 680px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+.term-input-line .term-prompt { flex-shrink: 0; }
+.term-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00ff41;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  caret-color: #00ff41;
+}
+
+@media print {
+  @page { margin: 0.8cm; }
+  body { background: #fff; color: #000; font-size: 8.5pt; line-height: 1.35; }
+  .lang-switch, .repo-toggle, .demo-btn, #moreRepos, .theme-btn, .profile-card { display: none !important; }
+  .container { max-width: 100%; padding: 0; }
+  section { padding: 8px 0 4px; page-break-inside: avoid; }
+  .section-title { font-size: 11pt; margin-bottom: 6px; color: #1a56db !important; }
+  .section-title::after { background: #ccc; height: 1px; }
+  header {
+    background: #fff !important; color: #000 !important;
+    padding: 6px 0 4px !important;
+  }
+  .header-content { gap: 12px; }
+  header h1 { font-size: 16pt; color: #000; margin: 0; }
+  header .title { font-size: 9pt; color: #555 !important; padding-bottom: 4px; border-bottom: 1px solid #ddd; margin-bottom: 4px; }
+  .profile-photo { width: 65px; height: 65px; border: 2px solid #ccc; }
+  header .contact-bar { gap: 4px 10px; margin-top: 4px; }
+  header .contact-bar a, header .contact-bar .contact-phone { font-size: 7.5pt; color: #333 !important; }
+  header .contact-icon { width: 18px; height: 18px; font-size: 7pt; background: #eee; }
+  .profile-card p { font-size: 8pt; color: #333; line-height: 1.4; }
+  .timeline { padding-left: 16px; }
+  .timeline-item { margin-bottom: 6px; padding-left: 10px; }
+  .timeline-item::before { left: -20px; width: 8px; height: 8px; border-width: 2px; background: #1a56db; }
+  .timeline::before { left: 7px; }
+  .timeline-item .date { font-size: 6.5pt; }
+  .timeline-item h3 { font-size: 8.5pt; }
+  .timeline-item .company { font-size: 7.5pt; margin-bottom: 2px; color: #444; }
+  .timeline-item p { font-size: 7.5pt; color: #333; }
+  .edu-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .edu-card { padding: 6px 10px; border: 1px solid #ddd; box-shadow: none; }
+  .edu-card h3 { font-size: 8pt; }
+  .edu-card .institution { font-size: 7pt; }
+  .edu-card .year { font-size: 6.5pt; margin-top: 2px; }
+  .skills-tags { gap: 4px; }
+  .skill-tag { padding: 3px 10px; font-size: 7.5pt; border-radius: 4px; }
+  .skill-tag.advanced { background: #1a56db; color: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .skill-tag.intermediate { background: #e8eefb; color: #1a56db; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .skill-tag small { font-size: 6.5pt; padding: 0 5px; }
+  .projects-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .project-card { padding: 8px 10px; border: 1px solid #ddd; box-shadow: none; break-inside: avoid; }
+  .project-card .project-tag { font-size: 6pt; padding: 1px 6px; margin-bottom: 3px; background: #e8eefb; color: #1a56db; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .project-card h3 { font-size: 8pt; margin-bottom: 2px; }
+  .project-card p { font-size: 7pt; margin-bottom: 4px; color: #333; }
+  .project-card .tech-stack span { font-size: 6.5pt; padding: 1px 6px; }
+  .project-card a[href]:not(.demo-btn) { color: inherit; text-decoration: none; }
+  footer { padding: 8px 0; font-size: 7pt; color: #888; border-top: 1px solid #ddd; }
+}
+</style>
+</head>
+<body>
+
+<header role="banner">
+  <div class="lang-switch" role="toolbar" aria-label="Selector de idioma y tema">
+    <button id="themeToggle" onclick="toggleTheme()" title="Modo oscuro" class="theme-btn" aria-label="Activar modo oscuro">&#9790;</button>
+    <button id="langEs" class="active" onclick="switchLanguage('es')" title="Espa&ntilde;ol" aria-label="Espa&ntilde;ol"><svg viewBox="0 0 60 40" width="20" height="14" aria-hidden="true"><rect width="60" height="40" fill="#c60b1e"/><rect y="10" width="60" height="20" fill="#ffc400"/></svg></button>
+    <button id="langEn" onclick="switchLanguage('en')" title="English" aria-label="English"><svg viewBox="0 0 60 40" width="20" height="14" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><rect x="0" y="16" width="60" height="8" fill="#fff"/><rect x="26" y="0" width="8" height="40" fill="#fff"/><rect x="0" y="18" width="60" height="4" fill="#c8102e"/><rect x="28" y="0" width="4" height="40" fill="#c8102e"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#c8102e" stroke-width="4"/></svg></button>
+    <button onclick="window.print()" title="Descargar PDF" class="theme-btn" style="font-size:0.85rem!important" aria-label="Descargar PDF">&#128196;</button>
+  </div>
+  <div class="container">
+    <div class="header-content">
+      <img src="profile.jpg" alt="&Aacute;lvaro Domingo Cord&oacute;n" class="profile-photo">
+      <div class="header-info">
+        <h1>&Aacute;lvaro Domingo Cord&oacute;n</h1>
+        <p class="title">Data Analyst</p>
+        <div class="contact-bar">
+          <a href="mailto:alvarodc093@gmail.com"><span class="contact-icon" aria-hidden="true">&#9993;</span> alvarodc093@gmail.com</a>
+          <span class="contact-phone"><span class="contact-icon" aria-hidden="true">&#9742;</span> 642 783 118</span>
+          <a href="https://linkedin.com/in/alvaro-domingo" target="_blank" rel="noopener"><span class="contact-icon" aria-hidden="true">&#9654;</span> linkedin.com/in/alvaro-domingo</a>
+          <a href="https://github.com/alvarodc093-pixel" target="_blank" rel="noopener"><span class="contact-icon" aria-hidden="true">&#9654;</span> github.com/alvarodc093-pixel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container" role="main">
+
+  <div class="profile-card" aria-label="Perfil profesional">
+    <p data-i18n="profile"><strong>Data Analyst</strong> en formaci&oacute;n con experiencia en entornos t&eacute;cnicos de alta precisi&oacute;n donde desarroll&eacute; una s&oacute;lida capacidad <strong>anal&iacute;tica</strong>, orientaci&oacute;n al detalle y gesti&oacute;n de datos digitales. Actualmente especializ&aacute;ndome en <strong>Python, SQL, Power BI</strong> y visualizaci&oacute;n de datos para la extracci&oacute;n de <strong>insights accionables</strong>. Capaz de transformar datos complejos en decisiones estrat&eacute;gicas mediante <strong>data storytelling</strong>, dashboards interactivos y an&aacute;lisis estad&iacute;stico. Busco oportunidades como <strong>Data Analyst</strong> donde aportar rigor anal&iacute;tico, adaptabilidad y pasi&oacute;n por el dato.</p>
+  </div>
+
+  <section>
+    <h2 class="section-title" data-i18n="skillsTitle" id="skillsTitle">Habilidades T&eacute;cnicas</h2>
+    <div class="skills-tags" id="skillsGrid">
+      <span class="skill-tag advanced">Python <small data-i18n="skill1Level">Avanzado</small></span>
+      <span class="skill-tag advanced">Pandas <small data-i18n="skill2Level">Avanzado</small></span>
+      <span class="skill-tag advanced">SQL <small data-i18n="skill3Level">Avanzado</small></span>
+      <span class="skill-tag intermediate">Streamlit <small data-i18n="skill4Level">Intermedio</small></span>
+      <span class="skill-tag intermediate">Power BI <small data-i18n="skill5Level">Intermedio</small></span>
+    </div>
+  </section>
+
+  <section aria-labelledby="expTitle">
+    <h2 class="section-title" data-i18n="expTitle" id="expTitle">Experiencia Laboral</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">May 2022 &mdash; Nov 2022</div>
+        <h3 data-i18n="exp1Title">Dise&ntilde;ador CAD/CAM</h3>
+        <div class="company" data-i18n="exp1Company">Sector Dental &middot; Sevilla</div>
+        <p data-i18n="exp1Desc">Responsable del dise&ntilde;o digital de estructuras dentales (coronas, puentes, incrustaciones, implantes) con Exocad. Comunicaci&oacute;n directa con cl&iacute;nicas para asegurar requisitos funcionales y est&eacute;ticos. Control de calidad visual y digital, preparaci&oacute;n de archivos para producci&oacute;n (sinterizado 3D y fresado en zirconio, disilicato, PMMA).</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">Sep 2020 &mdash; May 2022</div>
+        <h3 data-i18n="exp2Title">T&eacute;cnico de Laboratorio Dental</h3>
+        <div class="company" data-i18n="exp2Company">Digital Dental Box &middot; El Puerto de Santa Mar&iacute;a</div>
+        <p data-i18n="exp2Desc">Trabajo en todas las &aacute;reas del laboratorio: recepci&oacute;n de impresiones, vaciado, montaje en articuladores, aplicaci&oacute;n de cer&aacute;mica, resina y estructuras met&aacute;licas. Colaboraci&oacute;n en flujo digital de principio a fin.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">Dic 2014 &mdash; Jul 2015</div>
+        <h3 data-i18n="exp3Title">Higienista Dental</h3>
+        <div class="company" data-i18n="exp3Company">Cl&iacute;nica Dental Bah&iacute;a &middot; C&aacute;diz</div>
+        <p data-i18n="exp3Desc">Prevenci&oacute;n y mantenimiento de salud oral, limpiezas profesionales, aplicaci&oacute;n de fl&uacute;or y selladores, toma de radiograf&iacute;as intraorales, asistencia al odont&oacute;logo y gesti&oacute;n de historiales cl&iacute;nicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="eduTitle">
+    <h2 class="section-title" data-i18n="eduTitle" id="eduTitle">Educaci&oacute;n</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3 data-i18n="edu1Title">Bootcamp en Data Science &amp; Analytics</h3>
+        <p class="institution" data-i18n="edu1Inst">The Bridge &middot; Digital Talent Accelerator</p>
+        <p class="year">2025</p>
+      </div>
+      <div class="edu-card">
+        <h3 data-i18n="edu2Title">T&eacute;cnico Superior en Pr&oacute;tesis Dentales</h3>
+        <p class="institution" data-i18n="edu2Inst">Escuela Esprohident</p>
+        <p class="year">2018 &mdash; 2020</p>
+      </div>
+      <div class="edu-card">
+        <h3 data-i18n="edu3Title">T&eacute;cnico Superior en Higiene Bucodental</h3>
+        <p class="institution" data-i18n="edu3Inst">Cesur</p>
+        <p class="year">2013 &mdash; 2014</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="langTitle">
+    <h2 class="section-title" data-i18n="langTitle" id="langTitle">Idiomas</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <h3 data-i18n="lang1Name">Espa&ntilde;ol</h3>
+        <p class="institution" data-i18n="lang1Level">Nativo</p>
+      </div>
+      <div class="edu-card">
+        <h3 data-i18n="lang2Name">Ingl&eacute;s</h3>
+        <p class="institution" data-i18n="lang2Level">Nativo</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="projectsTitle">
+    <h2 class="section-title" data-i18n="projectsTitle" id="projectsTitle">Proyectos Destacados</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj1Tag">An&aacute;lisis</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Eda-Games" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj1Title">Eda-Games</a></h3>
+        <p data-i18n="proj1Desc">An&aacute;lisis de mercado de videojuegos con 64K+ registros (VGChartz 2024). EDA completo, dashboard interactivo en Streamlit y visualizaciones con Plotly.</p>
+        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Streamlit</span><span>Plotly</span></div>
+        <a href="https://eda-games-af9fsgykpe9silkl42zxgv.streamlit.app/" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+      </div>
+      <a href="https://github.com/alvarodc093-pixel/Work-IA" target="_blank" rel="noopener" class="project-card" style="text-decoration:none;color:inherit">
+        <span class="project-tag" data-i18n="proj2Tag">An&aacute;lisis</span>
+        <h3 data-i18n="proj2Title">Work-IA</h3>
+        <p data-i18n="proj2Desc">EDA sobre el impacto de la IA en el empleo hacia 2030. An&aacute;lisis de 3.000 registros para identificar sectores con mayor riesgo de automatizaci&oacute;n y demanda futura.</p>
+        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
+      </a>
+      <a href="https://github.com/alvarodc093-pixel/House-Price" target="_blank" rel="noopener" class="project-card" style="text-decoration:none;color:inherit">
+        <span class="project-tag" data-i18n="proj3Tag">ML</span>
+        <h3 data-i18n="proj3Title">House-Price</h3>
+        <p data-i18n="proj3Desc">Modelos predictivos de precios de vivienda. An&aacute;lisis exploratorio, ingenier&iacute;a de variables y entrenamiento de modelos de regresi&oacute;n para estimar precio de venta.</p>
+        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Scikit-learn</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="moreRepos">
+    <button class="repo-toggle" id="repoToggle" onclick="toggleRepos()">
+      <span class="repo-toggle-arrow">&#9654;</span>
+      <span data-i18n="moreReposTitle">M&aacute;s Repositorios</span>
+    </button>
+    <div class="repo-grid" id="repoGrid"></div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container"><span data-i18n="footer">&copy; 2026 Álvaro Domingo Cord&oacute;n &mdash; Data Analyst</span> <span class="term-trigger" onclick="openTerminal()" title="Terminal" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openTerminal()" aria-label="Abrir terminal">&gt;_</span></div>
+</footer>
+
+<div class="term-overlay" id="termOverlay" role="dialog" aria-label="Terminal">
+  <div class="term-body" id="termBody">
+    <div class="term-line"><span class="term-prompt">alvaro@analyst:~$</span> <span class="term-cursor">&#9612;</span></div>
+  </div>
+  <div class="term-input-line">
+    <span class="term-prompt">alvaro@analyst:~$</span>
+    <input type="text" class="term-input" id="termInput" autofocus onkeydown="processTerminal(event)">
+  </div>
+</div>
+
+<script>
+var translations = {
+  es: {
+    profile: "Profesional con experiencia en dise\u00f1o CAD/CAM dental e higiene bucodental, actualmente en transici\u00f3n activa hacia el an\u00e1lisis de datos. Form\u00e1ndome en Python, SQL, Power BI y visualizaci\u00f3n de datos para aplicar mi capacidad anal\u00edtica al mundo data-driven. Busco oportunidades como Data Analyst donde aportar precisi\u00f3n, metodolog\u00eda y una s\u00f3lida adaptabilidad al aprendizaje continuo.",
+    expTitle: "Experiencia Laboral",
+    exp1Title: "Dise\u00f1ador CAD/CAM",
+    exp1Company: "Sector Dental \u00b7 Sevilla",
+    exp1Desc: "Responsable del dise\u00f1o digital de estructuras dentales (coronas, puentes, incrustaciones, implantes) con Exocad. Comunicaci\u00f3n directa con cl\u00ednicas para asegurar requisitos funcionales y est\u00e9ticos. Control de calidad visual y digital, preparaci\u00f3n de archivos para producci\u00f3n (sinterizado 3D y fresado en zirconio, disilicato, PMMA).",
+    exp2Title: "T\u00e9cnico de Laboratorio Dental",
+    exp2Company: "Digital Dental Box \u00b7 El Puerto de Santa Mar\u00eda",
+    exp2Desc: "Trabajo en todas las \u00e1reas del laboratorio: recepci\u00f3n de impresiones, vaciado, montaje en articuladores, aplicaci\u00f3n de cer\u00e1mica, resina y estructuras met\u00e1licas. Colaboraci\u00f3n en flujo digital de principio a fin.",
+    exp3Title: "Higienista Dental",
+    exp3Company: "Cl\u00ednica Dental Bah\u00eda \u00b7 C\u00e1diz",
+    exp3Desc: "Prevenci\u00f3n y mantenimiento de salud oral, limpiezas profesionales, aplicaci\u00f3n de fl\u00faor y selladores, toma de radiograf\u00edas intraorales, asistencia al odont\u00f3logo y gesti\u00f3n de historiales cl\u00ednicos.",
+    eduTitle: "Educaci\u00f3n",
+    edu1Title: "Bootcamp en Data Science & Analytics",
+    edu1Inst: "The Bridge \u00b7 Digital Talent Accelerator",
+    edu2Title: "T\u00e9cnico Superior en Pr\u00f3tesis Dentales",
+    edu2Inst: "Escuela Esprohident",
+    edu3Title: "T\u00e9cnico Superior en Higiene Bucodental",
+    edu3Inst: "Cesur",
+    skillsTitle: "Habilidades T\u00e9cnicas",
+    skill1Level: "Avanzado",
+    skill2Level: "Avanzado",
+    skill3Level: "Avanzado",
+    skill4Level: "Intermedio",
+    skill5Level: "Intermedio",
+    langTitle: "Idiomas",
+    lang1Name: "Espa\u00f1ol",
+    lang1Level: "Nativo",
+    lang2Name: "Ingl\u00e9s",
+    lang2Level: "Nativo",
+    proj1Tag: "An\u00e1lisis",
+    proj1Title: "Eda-Games",
+    proj1Desc: "An\u00e1lisis de mercado de videojuegos con 64K+ registros (VGChartz 2024). EDA completo, dashboard interactivo en Streamlit y visualizaciones con Plotly.",
+    proj2Tag: "An\u00e1lisis",
+    proj2Title: "Work-IA",
+    proj2Desc: "EDA sobre el impacto de la IA en el empleo hacia 2030. An\u00e1lisis de 3.000 registros para identificar sectores con mayor riesgo de automatizaci\u00f3n y demanda futura.",
+    proj3Tag: "ML",
+    proj3Title: "House-Price",
+    proj3Desc: "Modelos predictivos de precios de vivienda. An\u00e1lisis exploratorio, ingenier\u00eda de variables y entrenamiento de modelos de regresi\u00f3n para estimar precio de venta.",
+    footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Data Analyst",
+    projectsTitle: "Proyectos Destacados",
+    moreReposTitle: "M\u00e1s Repositorios",
+    demoBtn: "Ver demo"
+  },
+  en: {
+    profile: "Professional with experience in dental CAD/CAM design and oral hygiene, currently transitioning into data analytics. Training in Python, SQL, Power BI and data visualization to apply my analytical mindset to the data-driven world. Seeking opportunities as a Data Analyst where I can bring precision, methodology, and strong adaptability to continuous learning.",
+    expTitle: "Work Experience",
+    exp1Title: "CAD/CAM Designer",
+    exp1Company: "Sector Dental \u00b7 Seville",
+    exp1Desc: "Responsible for digital design of dental structures (crowns, bridges, inlays, implants) using Exocad. Direct communication with clinics to ensure functional and aesthetic requirements. Visual and digital quality control, file preparation for production (3D sintering and milling in zirconia, disilicate, PMMA).",
+    exp2Title: "Dental Laboratory Technician",
+    exp2Company: "Digital Dental Box \u00b7 El Puerto de Santa Mar\u00eda",
+    exp2Desc: "Worked across all laboratory areas: impression reception, pouring, articulator mounting, ceramic application, resin and metal structures. Collaborated on the full digital workflow from start to finish.",
+    exp3Title: "Dental Hygienist",
+    exp3Company: "Cl\u00ednica Dental Bah\u00eda \u00b7 C\u00e1diz",
+    exp3Desc: "Oral health prevention and maintenance, professional cleanings, fluoride and sealant application, intraoral X-rays, dentist assistance, and clinical record management.",
+    eduTitle: "Education",
+    edu1Title: "Bootcamp in Data Science & Analytics",
+    edu1Inst: "The Bridge \u00b7 Digital Talent Accelerator",
+    edu2Title: "Higher Technician in Dental Prosthetics",
+    edu2Inst: "Escuela Esprohident",
+    edu3Title: "Higher Technician in Oral Hygiene",
+    edu3Inst: "Cesur",
+    skillsTitle: "Technical Skills",
+    skill1Level: "Advanced",
+    skill2Level: "Advanced",
+    skill3Level: "Advanced",
+    skill4Level: "Intermediate",
+    skill5Level: "Intermediate",
+    langTitle: "Languages",
+    lang1Name: "Spanish",
+    lang1Level: "Native",
+    lang2Name: "English",
+    lang2Level: "Native",
+    proj1Tag: "Analytics",
+    proj1Title: "Eda-Games",
+    proj1Desc: "Video game market analysis with 64K+ records (VGChartz 2024). Full EDA, interactive Streamlit dashboard and Plotly visualizations.",
+    proj2Tag: "Analytics",
+    proj2Title: "Work-IA",
+    proj2Desc: "EDA on AI's impact on employment by 2030. Analysis of 3,000 records to identify sectors with highest automation risk and future demand.",
+    proj3Tag: "ML",
+    proj3Title: "House-Price",
+    proj3Desc: "House price prediction models. Exploratory analysis, feature engineering and regression model training to estimate sale prices.",
+    footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Data Analyst",
+    projectsTitle: "Featured Projects",
+    moreReposTitle: "More Repositories",
+    demoBtn: "View demo"
+  }
+};
+
+function switchLanguage(lang) {
+  document.getElementById('langEs').classList.toggle('active', lang === 'es');
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  document.documentElement.lang = lang;
+  var t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = t[key];
+      } else {
+        el.innerHTML = t[key];
+      }
+    }
+  });
+}
+
+(function() {
+  var saved = localStorage.getItem('theme');
+  var btn = document.getElementById('themeToggle');
+  if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    btn.innerHTML = '&#9728;';
+  }
+})();
+function toggleTheme() {
+  var html = document.documentElement;
+  var btn = document.getElementById('themeToggle');
+  if (html.getAttribute('data-theme') === 'dark') {
+    html.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+    btn.innerHTML = '&#9790;';
+  } else {
+    html.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+    btn.innerHTML = '&#9728;';
+  }
+}
+
+(function() {
+  var excluded = ['Eda-Games', 'Work-IA', 'House-Price'];
+  var langColors = {
+    Python: '#3572A5', 'Jupyter Notebook': '#DA5B0B', JavaScript: '#f1e05a',
+    HTML: '#e34c26', CSS: '#563d7c', TypeScript: '#3178c6', Shell: '#89e051',
+    R: '#198CE7', SQL: '#e38c00', Java: '#b07219', 'C#': '#178600',
+    Ruby: '#701516', Go: '#00ADD8', Rust: '#dea584', Swift: '#ffac45',
+    Kotlin: '#A97BFF', Dart: '#00B4AB', Scala: '#c22d40', PHP: '#4F5D95'
+  };
+  var url = 'https://api.github.com/users/alvarodc093-pixel/repos?sort=pushed&per_page=100';
+  fetch(url).then(function(r) {
+    if (!r.ok) throw new Error('GitHub API error');
+    return r.json();
+  }).then(function(repos) {
+    var filtered = repos.filter(function(r) { return excluded.indexOf(r.name) === -1 && !r.fork && !r.private; });
+    if (!filtered.length) return;
+    filtered.sort(function(a, b) { return new Date(b.pushed_at) - new Date(a.pushed_at); });
+    var grid = document.getElementById('repoGrid');
+    filtered.forEach(function(r) {
+      var desc = r.description ? r.description.replace(/<[^>]*>/g, '').substring(0, 120) : '';
+      if (desc.length >= 120) desc += '...';
+      var lang = r.language || '';
+      var dotColor = langColors[lang] || '#6b7280';
+      var card = document.createElement('a');
+      card.className = 'repo-card';
+      card.href = r.html_url;
+      card.target = '_blank';
+      card.rel = 'noopener';
+      card.innerHTML =
+        '<div class="repo-name">' + r.name.replace(/-/g, ' ') + '</div>' +
+        (desc ? '<div class="repo-desc">' + desc + '</div>' : '') +
+        '<div class="repo-meta">' +
+          (lang ? '<span class="repo-lang"><span class="repo-lang-dot" style="background:' + dotColor + '"></span>' + lang + '</span>' : '') +
+          '<span class="repo-stars">&#9733; ' + r.stargazers_count + '</span>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+    document.getElementById('repoToggle').style.display = 'flex';
+  }).catch(function() {});
+})();
+function toggleRepos() {
+  var grid = document.getElementById('repoGrid');
+  var arrow = document.querySelector('.repo-toggle-arrow');
+  var isHidden = grid.style.display === 'none' || grid.style.display === '';
+  grid.style.display = isHidden ? 'grid' : 'none';
+  arrow.style.transform = isHidden ? 'rotate(90deg)' : 'rotate(0deg)';
+}
+
+/* Terminal easter egg */
+var termHistory = [];
+var termHistIdx = -1;
+var termCmds = {
+  help: 'Comandos disponibles:\n  help     &mdash; muestra esta ayuda\n  whoami   &mdash; mi perfil\n  skills   &mdash; habilidades t&eacute;cnicas\n  projects &mdash; proyectos destacados\n  contact  &mdash; informaci&oacute;n de contacto\n  exit     &mdash; cerrar terminal',
+  whoami: '&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst. De la precisi&oacute;n dental al an&aacute;lisis de datos.',
+  skills: 'Python (Avanzado) | Pandas (Avanzado) | SQL (Avanzado) | Streamlit (Intermedio) | Power BI (Intermedio)',
+  projects: 'eda-games &mdash; github.com/alvarodc093-pixel/Eda-Games\nwork-ia &mdash; github.com/alvarodc093-pixel/Work-IA\nhouse-price &mdash; github.com/alvarodc093-pixel/House-Price',
+  contact: 'Email: alvarodc093@gmail.com\nTel: 642 783 118\nLinkedIn: linkedin.com/in/alvaro-domingo\nGitHub: github.com/alvarodc093-pixel',
+  exit: 'Cerrando terminal...'
+};
+
+function openTerminal() {
+  var o = document.getElementById('termOverlay');
+  var b = document.getElementById('termBody');
+  o.classList.add('open');
+  b.innerHTML = '<div class="term-line">Terminal CV &mdash; escribe <strong>help</strong> para empezar</div>';
+  termHistory = [];
+  termHistIdx = -1;
+  setTimeout(function() { document.getElementById('termInput').focus(); }, 100);
+}
+
+function closeTerminal() {
+  document.getElementById('termOverlay').classList.remove('open');
+}
+
+function processTerminal(e) {
+  if (e.key === 'Enter') {
+    var input = document.getElementById('termInput');
+    var body = document.getElementById('termBody');
+    var cmd = input.value.trim().toLowerCase();
+    input.value = '';
+    var line = document.createElement('div');
+    line.className = 'term-line';
+    line.innerHTML = '<span class="term-prompt">alvaro@analyst:~$</span> ' + cmd;
+    body.appendChild(line);
+    if (cmd) { termHistory.push(cmd); termHistIdx = termHistory.length; }
+    if (cmd === 'exit') {
+      var msg = document.createElement('div');
+      msg.className = 'term-line';
+      msg.innerHTML = termCmds.exit;
+      body.appendChild(msg);
+      setTimeout(closeTerminal, 500);
+      body.scrollTop = body.scrollHeight;
+      return;
+    }
+    var out = document.createElement('div');
+    out.className = 'term-line';
+    if (cmd === '') { out.innerHTML = '&nbsp;'; }
+    else if (termCmds[cmd]) { out.innerHTML = termCmds[cmd]; }
+    else { out.innerHTML = 'Comando no encontrado. Escribe <strong>help</strong> para ver los comandos disponibles.'; }
+    body.appendChild(out);
+    body.scrollTop = body.scrollHeight;
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    if (termHistIdx > 0) { termHistIdx--; document.getElementById('termInput').value = termHistory[termHistIdx]; }
+  } else if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    if (termHistIdx < termHistory.length - 1) { termHistIdx++; document.getElementById('termInput').value = termHistory[termHistIdx]; }
+    else { termHistIdx = termHistory.length; document.getElementById('termInput').value = ''; }
+  } else if (e.key === 'Escape') {
+    closeTerminal();
+  }
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeTerminal();
+  var o = document.getElementById('termOverlay');
+  if (o && o.classList.contains('open') && e.key === 'Enter' && document.activeElement !== document.getElementById('termInput')) {
+    document.getElementById('termInput').focus();
+  }
+});
+document.getElementById('termOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeTerminal();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 &mdash; Dato no encontrado | &Aacute;lvaro Domingo Cord&oacute;n</title>
+<meta name="description" content="Error 404 &mdash; p&aacute;gina no encontrada. Vuelve al inicio.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a56db'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-size='15' font-weight='700' fill='%23fff'%3EAD%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --primary: #1a56db;
+  --primary-dark: #1141a0;
+  --primary-light: #e8eefb;
+  --bg: #f8f9fc;
+  --surface: #ffffff;
+  --text: #1a1a2e;
+  --text-light: #5a5a7a;
+  --border: #e0e5f0;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(26,86,219,0.08);
+  --transition: 0.25s ease;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 48px 40px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+}
+.code {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 4px;
+  letter-spacing: -2px;
+}
+.sub {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  font-family: "Courier New", monospace;
+  margin-bottom: 24px;
+}
+.sub span {
+  color: var(--primary);
+  font-weight: 600;
+}
+.message {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.detail {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background var(--transition), transform var(--transition);
+}
+.btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+.terminal-box {
+  background: #0a0a0a;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin: 20px 0 28px;
+  text-align: left;
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  color: #00ff41;
+  line-height: 1.7;
+}
+.terminal-box .prompt { color: #00ff41; }
+.terminal-box .error { color: #ff5555; }
+.terminal-box .cursor { animation: blink 1s step-end infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@media (max-width: 480px) {
+  .card { padding: 32px 20px; }
+  .code { font-size: 3.5rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="code">404</div>
+  <div class="sub"><span>Error</span>: dato no encontrado en el DataFrame</div>
+
+  <div class="terminal-box">
+    <div><span class="prompt">In [1]:</span> df.loc[df[&quot;p&aacute;gina&quot;] == &quot;{url}&quot;]</div>
+    <div><span class="prompt">Out[1]:</span> <span class="error">KeyError</span>: &quot;'{url}' no existe en el &iacute;ndice&quot;</div>
+    <div><span class="prompt">In [2]:</span> df.isnull().sum()</div>
+    <div><span class="prompt">Out[2]:</span> p&aacute;gina    1 <span class="cursor">&#9612;</span></div>
+  </div>
+
+  <p class="detail">
+    La URL solicitada no se encuentra disponible.<br>
+    Puede que haya sido eliminada, movida o que nunca haya existido.
+  </p>
+
+  <a href="/" class="btn">Volver al inicio</a>
+</div>
+
+</body>
+</html>
