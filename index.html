@@ -84,7 +84,7 @@ header {
   gap: 4px;
   z-index: 5;
 }
-.lang-switch button {
+.lang-switch button, .lang-switch .cv-download-btn {
   background: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.3);
   padding: 4px 8px;
@@ -95,6 +95,17 @@ header {
   transition: all var(--transition);
 }
 .lang-switch button:hover { background: rgba(255,255,255,0.25); }
+.lang-switch .cv-download-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--primary); color: #fff;
+  text-decoration: none; font-size: 0.85rem;
+  transition: background var(--transition), transform var(--transition);
+  cursor: pointer;
+}
+.lang-switch .cv-download-btn:hover { background: var(--primary-dark); transform: scale(1.1); }
+[data-theme="dark"] .lang-switch .cv-download-btn { background: var(--primary-dark); color: #fff; }
+[data-theme="dark"] .lang-switch .cv-download-btn:hover { background: var(--primary); }
 .lang-switch button.active { background: rgba(255,255,255,0.9); border-color: #fff; }
 .theme-btn { font-size: 1rem !important; }
 .header-content {
@@ -589,52 +600,57 @@ footer {
 }
 
 @media print {
-  @page { margin: 0.8cm; }
-  body { background: #fff; color: #000; font-size: 8.5pt; line-height: 1.35; }
-  .lang-switch, .repo-toggle, .demo-btn, #moreRepos, .theme-btn, .profile-card { display: none !important; }
+  @page { margin: 0.5cm; size: A4; }
+  body { background: #fff; color: #000; font-size: 7pt; line-height: 1.25; }
+  .lang-switch, .repo-toggle, .demo-btn, #moreRepos, .theme-btn, .profile-card, .contact-box, .term-trigger, .cv-download-btn { display: none !important; }
   .container { max-width: 100%; padding: 0; }
-  section { padding: 8px 0 4px; page-break-inside: avoid; }
-  .section-title { font-size: 11pt; margin-bottom: 6px; color: #1a56db !important; }
+  section { padding: 3px 0 2px; page-break-inside: avoid; }
+  .section-title { font-size: 9pt; margin-bottom: 3px; color: #1a56db !important; }
   .section-title::after { background: #ccc; height: 1px; }
   header {
     background: #fff !important; color: #000 !important;
-    padding: 6px 0 4px !important;
+    padding: 2px 0 2px !important;
   }
-  .header-content { gap: 12px; }
-  header h1 { font-size: 16pt; color: #000; margin: 0; }
-  header .title { font-size: 9pt; color: #555 !important; padding-bottom: 4px; border-bottom: 1px solid #ddd; margin-bottom: 4px; }
-  .profile-photo { width: 65px; height: 65px; border: 2px solid #ccc; }
-  header .contact-bar { gap: 4px 10px; margin-top: 4px; }
-  header .contact-bar a, header .contact-bar .contact-phone { font-size: 7.5pt; color: #333 !important; }
-  header .contact-icon { width: 18px; height: 18px; font-size: 7pt; background: #eee; }
-  .profile-card p { font-size: 8pt; color: #333; line-height: 1.4; }
-  .timeline { padding-left: 16px; }
-  .timeline-item { margin-bottom: 6px; padding-left: 10px; }
-  .timeline-item::before { left: -20px; width: 8px; height: 8px; border-width: 2px; background: #1a56db; }
-  .timeline::before { left: 7px; }
-  .timeline-item .date { font-size: 6.5pt; }
-  .timeline-item h3 { font-size: 8.5pt; }
-  .timeline-item .company { font-size: 7.5pt; margin-bottom: 2px; color: #444; }
-  .timeline-item p { font-size: 7.5pt; color: #333; }
-  .edu-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
-  .edu-card { padding: 6px 10px; border: 1px solid #ddd; box-shadow: none; }
-  .edu-card h3 { font-size: 8pt; }
-  .edu-card .institution { font-size: 7pt; }
-  .edu-card .year { font-size: 6.5pt; margin-top: 2px; }
-  .skills-tags { gap: 4px; }
-  .skill-tag { padding: 3px 10px; font-size: 7.5pt; border-radius: 4px; }
+  .header-content { gap: 8px; }
+  header h1 { font-size: 13pt; color: #000; margin: 0; }
+  header .title { font-size: 7.5pt; color: #555 !important; padding-bottom: 2px; border-bottom: 1px solid #ddd; margin-bottom: 2px; }
+  .profile-photo { width: 50px; height: 50px; border: 1.5px solid #ccc; }
+  header .contact-bar { gap: 2px 8px; margin-top: 2px; }
+  header .contact-bar a, header .contact-bar .contact-phone { font-size: 6pt; color: #333 !important; }
+  header .contact-icon { width: 14px; height: 14px; font-size: 5.5pt; background: #eee; }
+  .timeline { padding-left: 12px; }
+  .timeline-item { margin-bottom: 3px; padding-left: 6px; }
+  .timeline-item::before { left: -16px; width: 6px; height: 6px; border-width: 1.5px; background: #1a56db; }
+  .timeline::before { left: 4px; }
+  .timeline-item .date { font-size: 5.5pt; margin-bottom: 0; }
+  .timeline-item h3 { font-size: 7pt; margin-bottom: 0; }
+  .timeline-item .company { font-size: 6pt; margin-bottom: 1px; color: #444; }
+  .timeline-item p { font-size: 6pt; color: #333; margin-bottom: 1px; }
+  .timeline-item .tech-stack { margin-top: 1px; gap: 2px; }
+  .timeline-item .tech-stack span { font-size: 5pt; padding: 0 4px; border-radius: 3px; }
+  .edu-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; margin-top: 2px; }
+  .edu-card { padding: 4px 6px; border: 1px solid #ddd; box-shadow: none; }
+  .edu-card h3 { font-size: 6.5pt; }
+  .edu-card .institution { font-size: 5.5pt; }
+  .edu-card .year { font-size: 5.5pt; margin-top: 1px; }
+  .skills-tags { gap: 2px; margin-top: 2px; }
+  .skill-tag { padding: 2px 6px; font-size: 6pt; border-radius: 3px; }
   .skill-tag.advanced { background: #1a56db; color: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .skill-tag.intermediate { background: #e8eefb; color: #1a56db; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .skill-tag small { font-size: 6.5pt; padding: 0 5px; }
-  .projects-grid { grid-template-columns: repeat(3, 1fr); gap: 6px; }
-  .project-card { padding: 8px 10px; border: 1px solid #ddd; box-shadow: none; break-inside: avoid; }
-  .project-card .project-tag { font-size: 6pt; padding: 1px 6px; margin-bottom: 3px; background: #e8eefb; color: #1a56db; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .project-card h3 { font-size: 8pt; margin-bottom: 2px; }
-  .project-card p { font-size: 7pt; margin-bottom: 4px; color: #333; }
-  .project-card .tech-stack span { font-size: 6.5pt; padding: 1px 6px; }
-  .timeline-item .tech-stack span { font-size: 6.5pt; padding: 1px 6px; }
+  .skill-tag small { font-size: 5.5pt; padding: 0 3px; }
+  .lang-grid { gap: 4px; margin-top: 2px; }
+  .lang-card { padding: 3px 8px; }
+  .lang-card .lang-name { font-size: 6.5pt; }
+  .lang-card .lang-level { font-size: 5.5pt; }
+  .projects-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; margin-top: 2px; }
+  .project-card { padding: 4px 6px; border: 1px solid #ddd; box-shadow: none; break-inside: avoid; }
+  .project-card .project-tag { font-size: 5pt; padding: 0 4px; margin-bottom: 1px; background: #e8eefb; color: #1a56db; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .project-card h3 { font-size: 6.5pt; margin-bottom: 1px; }
+  .project-card p { font-size: 5.5pt; margin-bottom: 2px; color: #333; }
+  .project-card .tech-stack span { font-size: 5pt; padding: 0 4px; }
   .project-card a[href]:not(.demo-btn) { color: inherit; text-decoration: none; }
-  footer { padding: 8px 0; font-size: 7pt; color: #888; border-top: 1px solid #ddd; }
+  footer { padding: 4px 0; font-size: 5.5pt; color: #888; border-top: 1px solid #ddd; margin-top: 4px; }
+  .timeline-item strong, .project-card strong { font-weight: 600; }
 }
 </style>
 </head>
@@ -645,7 +661,8 @@ footer {
     <button id="themeToggle" onclick="toggleTheme()" title="Modo oscuro" class="theme-btn" aria-label="Activar modo oscuro">&#9790;</button>
     <button id="langEs" class="active" onclick="switchLanguage('es')" title="Espa&ntilde;ol" aria-label="Espa&ntilde;ol"><svg viewBox="0 0 60 40" width="20" height="14" aria-hidden="true"><rect width="60" height="40" fill="#c60b1e"/><rect y="10" width="60" height="20" fill="#ffc400"/></svg></button>
     <button id="langEn" onclick="switchLanguage('en')" title="English" aria-label="English"><svg viewBox="0 0 60 40" width="20" height="14" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><rect x="0" y="16" width="60" height="8" fill="#fff"/><rect x="26" y="0" width="8" height="40" fill="#fff"/><rect x="0" y="18" width="60" height="4" fill="#c8102e"/><rect x="28" y="0" width="4" height="40" fill="#c8102e"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#c8102e" stroke-width="4"/></svg></button>
-    <button onclick="window.print()" title="Descargar PDF" class="theme-btn" style="font-size:0.85rem!important" aria-label="Descargar PDF">&#128196;</button>
+    <a href="CV_Alvaro_Domingo.pdf" download class="cv-download-btn" title="Descargar CV" aria-label="Descargar CV">&#128196;</a>
+    <button onclick="window.print()" title="Imprimir" class="theme-btn" style="font-size:0.85rem!important" aria-label="Imprimir">&#128424;</button>
   </div>
   <div class="container">
     <div class="header-content">
