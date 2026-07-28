@@ -1,32 +1,57 @@
-# Portafolio profesional — Alvaro DC
+# Álvaro Domingo Cordón — CV / Portfolio
 
-Este repositorio contiene el sitio web personal de **Alvaro DC**, desarrollado como un CV online para presentar de forma clara y profesional mi perfil, experiencia y habilidades.
+Página web personal tipo CV/portfolio de **Álvaro Domingo Cordón**, Data Analyst. Publicada con GitHub Pages.
 
-## Descripción
+## 🌐 URL
 
-El objetivo de este proyecto es ofrecer una presentación sencilla, ordenada y fácil de leer para reclutadores y empresas interesadas en conocer mi perfil profesional.
+https://alvarodc093.github.io
 
-## Enfoque del proyecto
+## ✨ Características
 
-- Presentación visual limpia y profesional
-- Información organizada para una lectura rápida
-- Contenido orientado a procesos de selección
-- Publicación en GitHub Pages
+- **Single-file**: todo el HTML, CSS y JS en un único `index.html`
+- **Responsive**: adaptable a móvil, tablet y escritorio
+- **Dark mode**: con persistencia en localStorage y respeta `prefers-color-scheme`
+- **Idiomas**: conmutador ES/EN con traducciones vía `data-i18n`
+- **Imprimible**: botón de impresión con estilos `@media print` optimizados
+- **Terminal oculta**: easter egg con comandos (`help`, `whoami`, `skills`, etc.)
+- **Proyectos dinámicos**: sección "Más Repositorios" que carga desde la API de GitHub
+- **Animaciones**: barras de habilidades con IntersectionObserver
 
-## Tecnologías utilizadas
+## 🧱 Secciones
 
-- HTML
-- CSS
-- JavaScript
+1. Header — foto, nombre, título, barra de contacto
+2. Perfil profesional
+3. Experiencia laboral — timeline con 4 entradas
+4. Educación — grid con 3 tarjetas
+5. Habilidades técnicas — chips con nivel
+6. Idiomas
+7. Proyectos destacados + Más Repositorios (vía API)
+8. Contacto — tarjetas enlazadas (LinkedIn, GitHub, Email)
+9. Footer
 
-## Estado
+## 🛠️ Tecnologías
 
-Proyecto en desarrollo y mejora continua.
+- HTML5 semántico + ARIA
+- CSS3 (variables, flexbox, grid, media queries, animaciones)
+- JavaScript vanilla (manipulación DOM, fetch, localStorage, i18n)
 
-## Sitio web
+## 🚀 Despliegue
 
-[Ver portafolio publicado](https://alvarodc093-pixel.github.io/alvarodc093.github.io/)
+GitHub Pages despliega automáticamente desde la rama `main`.  
+No requiere build, npm ni dependencias externas.
 
-## Contacto
+## 📁 Estructura
 
-Este portafolio está pensado como carta de presentación profesional. Para conocer más sobre mi trabajo, visita el sitio publicado.
+```
+├── index.html      # Única página (HTML + CSS + JS inline)
+├── profile.jpg     # Foto de perfil
+├── 404.html        # Página de error personalizada
+├── README.md       # Este archivo
+└── AGENTS.md       # Instrucciones para asistentes IA
+```
+
+## 📬 Contacto
+
+- Email: alvarodc093@gmail.com
+- LinkedIn: [linkedin.com/in/alvaro-domingo](https://linkedin.com/in/alvaro-domingo)
+- GitHub: [github.com/alvarodc093-pixel](https://github.com/alvarodc093-pixel)
