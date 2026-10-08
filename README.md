@@ -4,7 +4,7 @@ Página web personal tipo CV/portfolio de **Álvaro Domingo Cordón**, Data Anal
 
 ## 🌐 URL
 
-https://alvarodc093-pixel.github.io
+https://alvarodc093-pixel.github.io/alvarodc093.github.io/
 
 ## ✨ Características
 
