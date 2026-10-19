@@ -10,23 +10,25 @@ https://alvarodc093-pixel.github.io/alvarodc093.github.io/
 
 - **Single-file**: todo el HTML, CSS y JS en un único `index.html`
 - **Responsive**: adaptable a móvil, tablet y escritorio
+- **Navegación sticky**: barra con enlace activo por sección y botón "volver arriba"
 - **Dark mode**: con persistencia en localStorage y respeta `prefers-color-scheme`
-- **Idiomas**: conmutador ES/EN con traducciones vía `data-i18n`
+- **Idiomas**: conmutador ES/EN con traducciones vía `data-i18n` (persiste en localStorage)
 - **Imprimible**: botón de impresión con estilos `@media print` optimizados
 - **Terminal oculta**: easter egg con comandos (`help`, `whoami`, `skills`, etc.)
 - **Proyectos dinámicos**: sección "Más Repositorios" que carga desde la API de GitHub
-- **Animaciones**: barras de habilidades con IntersectionObserver
+- **Accesibilidad**: `lang`, ARIA, skip link y soporte de `prefers-reduced-motion`
+- **SEO**: `canonical`, Open Graph, Twitter Card y datos estructurados JSON-LD (`Person`)
 
 ## 🧱 Secciones
 
 1. Header — foto, nombre, título, barra de contacto
-2. Perfil profesional
-3. Experiencia laboral — timeline con 4 entradas
-4. Educación — grid con 3 tarjetas
-5. Habilidades técnicas — chips con nivel
+2. Perfil profesional + disponibilidad y cifras clave
+3. Experiencia — timeline con 4 entradas
+4. Formación — grid con 3 tarjetas
+5. Habilidades técnicas — competencias agrupadas (datos, BI, visualización, IA)
 6. Idiomas
 7. Proyectos destacados + Más Repositorios (vía API)
-8. Contacto — tarjetas enlazadas (LinkedIn, GitHub, Email)
+8. Contacto — tarjetas enlazadas (GitHub, LinkedIn, Email)
 9. Footer
 
 ## 🛠️ Tecnologías

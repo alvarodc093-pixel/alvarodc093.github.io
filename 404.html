@@ -111,8 +111,8 @@ body {
   <div class="sub"><span>Error</span>: dato no encontrado en el DataFrame</div>
 
   <div class="terminal-box">
-    <div><span class="prompt">In [1]:</span> df.loc[df[&quot;p&aacute;gina&quot;] == &quot;{url}&quot;]</div>
-    <div><span class="prompt">Out[1]:</span> <span class="error">KeyError</span>: &quot;'{url}' no existe en el &iacute;ndice&quot;</div>
+    <div><span class="prompt">In [1]:</span> df.loc[df[&quot;p&aacute;gina&quot;] == &quot;<span data-url></span>&quot;]</div>
+    <div><span class="prompt">Out[1]:</span> <span class="error">KeyError</span>: &quot;'<span data-url></span>' no existe en el &iacute;ndice&quot;</div>
     <div><span class="prompt">In [2]:</span> df.isnull().sum()</div>
     <div><span class="prompt">Out[2]:</span> p&aacute;gina    1 <span class="cursor">&#9612;</span></div>
   </div>
@@ -122,8 +122,14 @@ body {
     Puede que haya sido eliminada, movida o que nunca haya existido.
   </p>
 
-  <a href="/" class="btn">Volver al inicio</a>
+  <a href="/alvarodc093.github.io/" class="btn">Volver al inicio</a>
 </div>
+
+<script>
+  document.querySelectorAll('[data-url]').forEach(function(el) {
+    el.textContent = location.pathname;
+  });
+</script>
 
 </body>
 </html>
