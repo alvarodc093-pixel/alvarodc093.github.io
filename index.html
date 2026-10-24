@@ -764,6 +764,11 @@ footer {
 
 @media print {
   @page { margin: 0.5cm; size: A4; }
+  /* Siempre en claro: con el modo oscuro activo el texto salía ilegible en papel */
+  :root, [data-theme="dark"] {
+    --primary: #1a56db; --primary-dark: #1141a0; --primary-light: #e8eefb;
+    --bg: #ffffff; --surface: #ffffff; --text: #1a1a2e; --text-light: #5a5a7a; --border: #e0e5f0;
+  }
   body { background: #fff; color: #000; font-size: 7pt; line-height: 1.25; }
   .lang-switch, .repo-toggle, .card-actions, .theme-btn, .topnav, .to-top, .skip-link, #moreRepos, .contact-box, .term-trigger, .cv-download-btn { display: none !important; }
   .container { max-width: 100%; padding: 0; }
