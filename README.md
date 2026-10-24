@@ -1,59 +1,34 @@
-# Álvaro Domingo Cordón — CV / Portfolio
+# Álvaro Domingo Cordón — Portafolio
 
-Página web personal tipo CV/portfolio de **Álvaro Domingo Cordón**, Data Analyst. Publicada con GitHub Pages.
+CV y portafolio web de Álvaro Domingo Cordón, Data Analyst Junior.
 
-## 🌐 URL
+**Web:** https://alvarodc093-pixel.github.io/alvarodc093.github.io/
 
-https://alvarodc093-pixel.github.io/alvarodc093.github.io/
+## Contenido
 
-## ✨ Características
+- Perfil, experiencia, formación, habilidades e idiomas.
+- Proyectos destacados, cada uno con su demo y su repositorio, y una lista de los demás repositorios públicos que se carga desde la API de GitHub.
+- CV en PDF descargable y versión imprimible de la propia página.
 
-- **Single-file**: todo el HTML, CSS y JS en un único `index.html`
-- **Responsive**: adaptable a móvil, tablet y escritorio
-- **Navegación sticky**: barra con enlace activo por sección y botón "volver arriba"
-- **Dark mode**: con persistencia en localStorage y respeta `prefers-color-scheme`
-- **Idiomas**: conmutador ES/EN con traducciones vía `data-i18n` (persiste en localStorage)
-- **Imprimible**: botón de impresión con estilos `@media print` optimizados
-- **Terminal oculta**: easter egg con comandos (`help`, `whoami`, `skills`, etc.)
-- **Proyectos dinámicos**: sección "Más Repositorios" que carga desde la API de GitHub
-- **Accesibilidad**: `lang`, ARIA, skip link y soporte de `prefers-reduced-motion`
-- **SEO**: `canonical`, Open Graph, Twitter Card y datos estructurados JSON-LD (`Person`)
+## Detalles técnicos
 
-## 🧱 Secciones
+- Un único `index.html` con HTML, CSS y JavaScript sin dependencias ni build.
+- Español e inglés, modo oscuro (respeta la preferencia del sistema) y ambas preferencias guardadas en el navegador.
+- Navegación fija con la sección activa resaltada, enlace para saltar al contenido, soporte de teclado y de `prefers-reduced-motion`.
+- Metadatos para buscadores y redes sociales (Open Graph y datos estructurados `Person`).
+- Página 404 propia y una pequeña terminal oculta en el pie (`>_`).
 
-1. Header — foto, nombre, título, barra de contacto
-2. Perfil profesional + disponibilidad y cifras clave
-3. Experiencia — timeline con 4 entradas
-4. Formación — grid con 3 tarjetas
-5. Habilidades técnicas — competencias agrupadas (datos, BI, visualización, IA)
-6. Idiomas
-7. Proyectos destacados + Más Repositorios (vía API)
-8. Contacto — tarjetas enlazadas (GitHub, LinkedIn, Email)
-9. Footer
+## Estructura
 
-## 🛠️ Tecnologías
-
-- HTML5 semántico + ARIA
-- CSS3 (variables, flexbox, grid, media queries, animaciones)
-- JavaScript vanilla (manipulación DOM, fetch, localStorage, i18n)
-
-## 🚀 Despliegue
-
-GitHub Pages despliega automáticamente desde la rama `main`.  
-No requiere build, npm ni dependencias externas.
-
-## 📁 Estructura
-
-```
-├── index.html      # Única página (HTML + CSS + JS inline)
-├── profile.jpg     # Foto de perfil
-├── 404.html        # Página de error personalizada
-├── README.md       # Este archivo
-└── AGENTS.md       # Instrucciones para asistentes IA
+```text
+├── index.html               # Toda la web
+├── 404.html                 # Página de error
+├── profile.jpg              # Foto
+└── CV_Alvaro_Domingo.pdf    # CV descargable
 ```
 
-## 📬 Contacto
+GitHub Pages publica la rama `main` tal cual.
 
-- Email: alvarodc093@gmail.com
-- LinkedIn: [linkedin.com/in/alvaro-domingo](https://linkedin.com/in/alvaro-domingo)
-- GitHub: [github.com/alvarodc093-pixel](https://github.com/alvarodc093-pixel)
+## Contacto
+
+[LinkedIn](https://www.linkedin.com/in/alvaro-domingo/) · [GitHub](https://github.com/alvarodc093-pixel) · alvarodc093@gmail.com

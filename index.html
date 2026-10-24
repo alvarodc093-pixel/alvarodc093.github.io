@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://alvarodc093-pixel.github.io/alvarodc093.github.io/profile.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alvarodc093-pixel.github.io/alvarodc093.github.io/">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior &amp; BI">
 <meta name="twitter:description" content="Data Analyst Junior. SQL, Python, Power BI, DAX, Power Query y Microsoft Fabric. Proyectos con datos reales y demos interactivas.">
 <meta name="twitter:image" content="https://alvarodc093-pixel.github.io/alvarodc093.github.io/profile.jpg">
@@ -29,7 +29,7 @@
   "url": "https://alvarodc093-pixel.github.io/alvarodc093.github.io/",
   "image": "https://alvarodc093-pixel.github.io/alvarodc093.github.io/profile.jpg",
   "email": "mailto:alvarodc093@gmail.com",
-  "knowsAbout": ["SQL", "Python", "Power BI", "DAX", "Power Query", "Microsoft Fabric", "Streamlit", "An\u00e1lisis de datos"],
+  "knowsAbout": ["SQL", "Python", "Power BI", "DAX", "Power Query", "Microsoft Fabric", "Streamlit", "scikit-learn", "An\u00e1lisis de datos"],
   "sameAs": [
     "https://github.com/alvarodc093-pixel",
     "https://linkedin.com/in/alvaro-domingo"
@@ -875,9 +875,9 @@ footer {
       <span class="meta-chip" data-i18n="metaSector">Sectores: videojuegos y tecnolog&iacute;a</span>
     </div>
     <div class="stats-row" role="group" aria-label="Cifras del portafolio">
-      <div class="stat"><span class="stat-num">6</span><span class="stat-label" data-i18n="stat1">Proyectos publicados</span></div>
+      <div class="stat"><span class="stat-num">8</span><span class="stat-label" data-i18n="stat1">Proyectos publicados</span></div>
       <div class="stat"><span class="stat-num">64K+</span><span class="stat-label" data-i18n="stat2">Registros analizados</span></div>
-      <div class="stat"><span class="stat-num">3</span><span class="stat-label" data-i18n="stat3">Demos en vivo</span></div>
+      <div class="stat"><span class="stat-num">7</span><span class="stat-label" data-i18n="stat3">Demos en vivo</span></div>
     </div>
   </div>
 
@@ -916,6 +916,7 @@ footer {
           <span class="skill-tag">SQLite</span>
           <span class="skill-tag">APIs REST</span>
           <span class="skill-tag">ETL &amp; Data Cleaning</span>
+          <span class="skill-tag">Machine learning (scikit-learn)</span>
           <span class="skill-tag">IA aplicada (LLM / RAG)</span>
           <span class="skill-tag">Git &amp; GitHub</span>
         </div>
@@ -996,6 +997,16 @@ footer {
     <h2 class="section-title" data-i18n="projectsTitle" id="projectsTitle">Proyectos Destacados</h2>
     <div class="projects-grid">
       <div class="project-card">
+        <span class="project-tag" data-i18n="proj7Tag">ML &middot; Producto de datos</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/steam-launch-radar" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj7Title">Steam Launch Radar &mdash; Lanzamientos en Steam</a></h3>
+        <p data-i18n="proj7Desc">&iquest;Va bien el lanzamiento de un juego? Con las rese&ntilde;as de sus primeros 3, 7 o 14 d&iacute;as estima cu&aacute;ntas tendr&aacute; al mes y si es mucho o poco para su g&eacute;nero. 3.019 lanzamientos reales, modelos validados por fecha y app web.</p>
+        <div class="tech-stack"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Next.js</span><span>TypeScript</span></div>
+        <div class="card-actions">
+          <a href="https://steam-launch-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/steam-launch-radar" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
         <span class="project-tag" data-i18n="proj1Tag">ML &middot; Churn</span>
         <h3><a href="https://github.com/alvarodc093-pixel/Churnguard-Player-Retention" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj1Title">ChurnGuard &mdash; Retenci&oacute;n de jugadores</a></h3>
         <p data-i18n="proj1Desc">&iquest;Por qu&eacute; se van los jugadores de un juego free-to-play? Analic&eacute; datos de retenci&oacute;n, segment&eacute; jugadores por riesgo de abandono y constru&iacute; un modelo de churn con una web interactiva de apoyo a decisiones.</p>
@@ -1008,20 +1019,21 @@ footer {
       <div class="project-card">
         <span class="project-tag" data-i18n="proj2Tag">Dashboard &middot; API</span>
         <h3><a href="https://github.com/alvarodc093-pixel/Twitch-Audience-Analytics" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj2Title">Twitch Game Pulse &mdash; Audiencia en Twitch</a></h3>
-        <p data-i18n="proj2Desc">&iquest;Qu&eacute; juegos ganan o pierden audiencia? Dashboard en tiempo real con la API de Twitch que muestra tendencias por juego y g&eacute;nero, m&aacute;s un chat con IA para preguntar sobre los datos.</p>
-        <div class="tech-stack"><span>Python</span><span>Streamlit</span><span>Twitch API</span><span>Plotly</span></div>
+        <p data-i18n="proj2Desc">&iquest;Qu&eacute; juegos ganan o pierden audiencia? Snapshots diarios del top 100 de Twitch con su API, guardados en SQLite por una ingesta autom&aacute;tica (GitHub Actions), y dashboard con ranking, crecimiento y variabilidad.</p>
+        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Twitch API</span><span>GitHub Actions</span></div>
         <div class="card-actions">
-          <a href="https://twitch-game-pulse-yxsppvdvpqnt9wit6rezxt.streamlit.app/" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://twitch-game-pulse.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
           <a href="https://github.com/alvarodc093-pixel/Twitch-Audience-Analytics" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
         </div>
       </div>
       <div class="project-card">
         <span class="project-tag" data-i18n="proj3Tag">EDA &middot; 64K registros</span>
         <h3><a href="https://github.com/alvarodc093-pixel/Video-Game-Market-Analysis" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj3Title">An&aacute;lisis del mercado de videojuegos</a></h3>
-        <p data-i18n="proj3Desc">EDA de m&aacute;s de 64.000 videojuegos (VGChartz 2024) para responder preguntas de negocio: g&eacute;neros y plataformas m&aacute;s rentables, publishers l&iacute;deres, evoluci&oacute;n del mercado y diferencias regionales.</p>
-        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Jupyter</span><span>Plotly</span><span>Streamlit</span></div>
+        <p data-i18n="proj3Desc">EDA de m&aacute;s de 64.000 videojuegos (VGChartz 2024) para responder preguntas de negocio: g&eacute;neros y plataformas que m&aacute;s venden, publishers l&iacute;deres, evoluci&oacute;n del mercado y diferencias regionales.</p>
+        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Jupyter</span><span>Seaborn</span><span>Streamlit</span></div>
         <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/Video-Game-Market-Analysis" target="_blank" rel="noopener" class="demo-btn" data-i18n="repoBtn">Ver repositorio</a>
+          <a href="https://video-game-market-analysis.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Video-Game-Market-Analysis" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
         </div>
       </div>
       <div class="project-card">
@@ -1030,16 +1042,18 @@ footer {
         <p data-i18n="proj4Desc">&iquest;Qu&eacute; piden las empresas a un Data Analyst? Ingesta de ofertas reales de Adzuna en SQLite y app Streamlit con chat RAG: habilidades m&aacute;s pedidas, salarios y demanda por pa&iacute;s.</p>
         <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Adzuna API</span><span>RAG</span></div>
         <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/Datajob" target="_blank" rel="noopener" class="demo-btn" data-i18n="repoBtn">Ver repositorio</a>
+          <a href="https://datajobs-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Datajob" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
         </div>
       </div>
       <div class="project-card">
         <span class="project-tag" data-i18n="proj5Tag">RAG &middot; Streamlit</span>
         <h3><a href="https://github.com/alvarodc093-pixel/Video-Game-Rag-Assistant" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj5Title">VideoGame Radar &mdash; Descubrimiento con IA</a></h3>
-        <p data-i18n="proj5Desc">Cat&aacute;logo de videojuegos desde la API de RAWG guardado en SQLite, con b&uacute;squeda y chat RAG para descubrir juegos por g&eacute;nero, plataforma o duraci&oacute;n.</p>
+        <p data-i18n="proj5Desc">Cat&aacute;logo de los 1.000 juegos m&aacute;s populares de RAWG en SQLite, con b&uacute;squeda por g&eacute;nero, plataforma o etiqueta y chat RAG para pedir recomendaciones.</p>
         <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>RAWG API</span><span>Chroma</span></div>
         <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/Video-Game-Rag-Assistant" target="_blank" rel="noopener" class="demo-btn" data-i18n="repoBtn">Ver repositorio</a>
+          <a href="https://videogame-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Video-Game-Rag-Assistant" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
         </div>
       </div>
       <div class="project-card">
@@ -1050,6 +1064,15 @@ footer {
         <div class="card-actions">
           <a href="https://pokemon-rojo-fuego-verde-hojavercel.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
           <a href="https://github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj8Tag">IA &middot; Audio</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/clonador-de-voz" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj8Title">Clonador de voz &mdash; Bot y app</a></h3>
+        <p data-i18n="proj8Desc">Extrae el audio de un v&iacute;deo, clona una voz con modelos abiertos (Chatterbox, Seed-VC, Demucs) y la mezcla sobre una base musical. Bot de l&iacute;nea de comandos, app Streamlit y 79 tests.</p>
+        <div class="tech-stack"><span>Python</span><span>Streamlit</span><span>PyTorch</span><span>FFmpeg</span><span>pytest</span></div>
+        <div class="card-actions">
+          <a href="https://github.com/alvarodc093-pixel/clonador-de-voz" target="_blank" rel="noopener" class="demo-btn" data-i18n="repoBtn">Ver repositorio</a>
         </div>
       </div>
     </div>
@@ -1089,7 +1112,7 @@ footer {
 </section>
 
 <footer role="contentinfo">
-  <div class="container"><span data-i18n="footer">&copy; 2026 Álvaro Domingo Cord&oacute;n &mdash; Data Analyst</span> <span class="term-trigger" onclick="openTerminal()" title="Terminal" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openTerminal()" aria-label="Abrir terminal">&gt;_</span></div>
+  <div class="container"><span data-i18n="footer">&copy; 2026 &Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior</span> <span class="term-trigger" onclick="openTerminal()" title="Terminal" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openTerminal()" aria-label="Abrir terminal">&gt;_</span></div>
 </footer>
 
 <button class="to-top" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba" title="Volver arriba">&#8593;</button>
@@ -1100,7 +1123,7 @@ footer {
   </div>
   <div class="term-input-line">
     <span class="term-prompt">alvaro@analyst:~$</span>
-    <input type="text" class="term-input" id="termInput" autofocus onkeydown="processTerminal(event)">
+    <input type="text" class="term-input" id="termInput" aria-label="Comando" onkeydown="processTerminal(event)">
   </div>
 </div>
 
@@ -1151,19 +1174,25 @@ var translations = {
     proj1Desc: "\u00bfPor qu\u00e9 se van los jugadores de un juego free-to-play? Analic\u00e9 datos de retenci\u00f3n, segment\u00e9 jugadores por riesgo de abandono y constru\u00ed un modelo de churn con una web interactiva de apoyo a decisiones.",
     proj2Tag: "Dashboard \u00b7 API",
     proj2Title: "Twitch Game Pulse \u2014 Audiencia en Twitch",
-    proj2Desc: "\u00bfQu\u00e9 juegos ganan o pierden audiencia? Dashboard en tiempo real con la API de Twitch que muestra tendencias por juego y g\u00e9nero, m\u00e1s un chat con IA para preguntar sobre los datos.",
+    proj2Desc: "\u00bfQu\u00e9 juegos ganan o pierden audiencia? Snapshots diarios del top 100 de Twitch con su API, guardados en SQLite por una ingesta autom\u00e1tica (GitHub Actions), y dashboard con ranking, crecimiento y variabilidad.",
     proj3Tag: "EDA \u00b7 64K registros",
     proj3Title: "An\u00e1lisis del mercado de videojuegos",
-    proj3Desc: "EDA de m\u00e1s de 64.000 videojuegos (VGChartz 2024) para responder preguntas de negocio: g\u00e9neros y plataformas m\u00e1s rentables, publishers l\u00edderes, evoluci\u00f3n del mercado y diferencias regionales.",
+    proj3Desc: "EDA de m\u00e1s de 64.000 videojuegos (VGChartz 2024) para responder preguntas de negocio: g\u00e9neros y plataformas que m\u00e1s venden, publishers l\u00edderes, evoluci\u00f3n del mercado y diferencias regionales.",
     proj4Tag: "Producto de datos \u00b7 RAG",
     proj4Title: "DataJobs Radar \u2014 Empleo Data Analyst",
     proj4Desc: "\u00bfQu\u00e9 piden las empresas a un Data Analyst? Ingesta de ofertas reales de Adzuna en SQLite y app Streamlit con chat RAG: habilidades m\u00e1s pedidas, salarios y demanda por pa\u00eds.",
     proj5Tag: "RAG \u00b7 Streamlit",
     proj5Title: "VideoGame Radar \u2014 Descubrimiento con IA",
-    proj5Desc: "Cat\u00e1logo de videojuegos desde la API de RAWG guardado en SQLite, con b\u00fasqueda y chat RAG para descubrir juegos por g\u00e9nero, plataforma o duraci\u00f3n.",
+    proj5Desc: "Cat\u00e1logo de los 1.000 juegos m\u00e1s populares de RAWG en SQLite, con b\u00fasqueda por g\u00e9nero, plataforma o etiqueta y chat RAG para pedir recomendaciones.",
     proj6Tag: "Web \u00b7 Frontend",
     proj6Title: "Gu\u00eda Pok\u00e9mon RF/VH \u2014 Web interactiva",
     proj6Desc: "Gu\u00eda web de Pok\u00e9mon Rojo Fuego y Verde Hoja con Pok\u00e9dex online y datos en vivo desde Pok\u00e9API. HTML, CSS y JavaScript sin frameworks.",
+    proj7Tag: "ML \u00b7 Producto de datos",
+    proj7Title: "Steam Launch Radar \u2014 Lanzamientos en Steam",
+    proj7Desc: "\u00bfVa bien el lanzamiento de un juego? Con las rese\u00f1as de sus primeros 3, 7 o 14 d\u00edas estima cu\u00e1ntas tendr\u00e1 al mes y si es mucho o poco para su g\u00e9nero. 3.019 lanzamientos reales, modelos validados por fecha y app web.",
+    proj8Tag: "IA \u00b7 Audio",
+    proj8Title: "Clonador de voz \u2014 Bot y app",
+    proj8Desc: "Extrae el audio de un v\u00eddeo, clona una voz con modelos abiertos (Chatterbox, Seed-VC, Demucs) y la mezcla sobre una base musical. Bot de l\u00ednea de comandos, app Streamlit y 79 tests.",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Data Analyst Junior",
     projectsTitle: "Proyectos Destacados",
     moreReposTitle: "M\u00e1s Repositorios",
@@ -1226,19 +1255,25 @@ var translations = {
     proj1Desc: "Why do players leave a free-to-play game? I analysed retention data, segmented players by churn risk and built a churn model with an interactive decision-support web app.",
     proj2Tag: "Dashboard \u00b7 API",
     proj2Title: "Twitch Game Pulse \u2014 Twitch audience",
-    proj2Desc: "Which games are gaining or losing audience? A real-time dashboard using the Twitch API that shows trends by game and genre, plus an AI chat to ask questions about the data.",
+    proj2Desc: "Which games are gaining or losing audience? Daily snapshots of Twitch's top 100 games from its API, stored in SQLite by an automated ingestion job (GitHub Actions), with a dashboard of rankings, growth and variability.",
     proj3Tag: "EDA \u00b7 64K records",
     proj3Title: "Video game market analysis",
-    proj3Desc: "EDA of 64,000+ video games (VGChartz 2024) answering business questions: most profitable genres and platforms, leading publishers, market evolution and regional differences.",
+    proj3Desc: "EDA of 64,000+ video games (VGChartz 2024) answering business questions: best-selling genres and platforms, leading publishers, market evolution and regional differences.",
     proj4Tag: "Data product \u00b7 RAG",
     proj4Title: "DataJobs Radar \u2014 Data Analyst jobs",
     proj4Desc: "What do companies ask of a Data Analyst? Ingests real Adzuna job postings into SQLite and explores them in a Streamlit app with a RAG chat: most requested skills, salaries and demand by country.",
     proj5Tag: "RAG \u00b7 Streamlit",
     proj5Title: "VideoGame Radar \u2014 AI discovery",
-    proj5Desc: "Video game catalogue from the RAWG API stored in SQLite, with search and a RAG chat to discover games by genre, platform or length.",
+    proj5Desc: "Catalogue of the 1,000 most popular games on RAWG stored in SQLite, with search by genre, platform or tag and a RAG chat for recommendations.",
     proj6Tag: "Web \u00b7 Frontend",
     proj6Title: "Pok\u00e9mon FRLG Guide \u2014 Interactive web",
     proj6Desc: "Web guide for Pok\u00e9mon FireRed and LeafGreen with an online Pok\u00e9dex and live Pok\u00e9API data. Vanilla HTML, CSS and JavaScript.",
+    proj7Tag: "ML \u00b7 Data product",
+    proj7Title: "Steam Launch Radar \u2014 Steam launches",
+    proj7Desc: "Is a game launch going well? From the reviews of its first 3, 7 or 14 days it estimates how many it will have after a month and whether that is high or low for its genre. 3,019 real launches, models validated by date and a web app.",
+    proj8Tag: "AI \u00b7 Audio",
+    proj8Title: "Voice cloner \u2014 Bot and app",
+    proj8Desc: "Extracts the audio from a video, clones a voice with open models (Chatterbox, Seed-VC, Demucs) and mixes it over a backing track. Command-line bot, Streamlit app and 79 tests.",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Junior Data Analyst",
     projectsTitle: "Featured Projects",
     moreReposTitle: "More Repositories",
@@ -1277,7 +1312,8 @@ function switchLanguage(lang, skipSave) {
 }
 
 (function() {
-  var saved = localStorage.getItem('theme');
+  var saved = null;
+  try { saved = localStorage.getItem('theme'); } catch (e) {}
   var btn = document.getElementById('themeToggle');
   if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.setAttribute('data-theme', 'dark');
@@ -1318,17 +1354,17 @@ function toggleTheme() {
   var btn = document.getElementById('themeToggle');
   if (html.getAttribute('data-theme') === 'dark') {
     html.removeAttribute('data-theme');
-    localStorage.setItem('theme', 'light');
+    try { localStorage.setItem('theme', 'light'); } catch (e) {}
     btn.innerHTML = '&#9790;';
   } else {
     html.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
+    try { localStorage.setItem('theme', 'dark'); } catch (e) {}
     btn.innerHTML = '&#9728;';
   }
 }
 
 (function() {
-  var excluded = ['Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'Guia-Pokemon-rojo-fuego-y-verde-hoja', 'alvarodc093.github.io', 'alvarodc093-pixel'];
+  var excluded = ['steam-launch-radar', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'Guia-Pokemon-rojo-fuego-y-verde-hoja', 'clonador-de-voz', 'alvarodc093.github.io', 'alvarodc093-pixel'];
   var langColors = {
     Python: '#3572A5', 'Jupyter Notebook': '#DA5B0B', JavaScript: '#f1e05a',
     HTML: '#e34c26', CSS: '#563d7c', TypeScript: '#3178c6', Shell: '#89e051',
@@ -1356,7 +1392,7 @@ function toggleTheme() {
       card.target = '_blank';
       card.rel = 'noopener';
       card.innerHTML =
-        '<div class="repo-name">' + r.name + '</div>' +
+        '<div class="repo-name">' + r.name.replace(/[<>&"]/g, '') + '</div>' +
         (desc ? '<div class="repo-desc">' + desc + '</div>' : '') +
         '<div class="repo-meta">' +
           (lang ? '<span class="repo-lang"><span class="repo-lang-dot" style="background:' + dotColor + '"></span>' + lang + '</span>' : '') +
@@ -1381,8 +1417,8 @@ var termHistIdx = -1;
 var termCmds = {
   help: 'Comandos disponibles:\n  help     &mdash; muestra esta ayuda\n  whoami   &mdash; mi perfil\n  skills   &mdash; habilidades t&eacute;cnicas\n  projects &mdash; proyectos destacados\n  contact  &mdash; informaci&oacute;n de contacto\n  exit     &mdash; cerrar terminal',
   whoami: '&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior (BI). SQL, Python, Power BI y Microsoft Fabric. De la precisi&oacute;n dental al an&aacute;lisis de datos.',
-  skills: 'SQL | Python | Pandas | Excel | Power BI | DAX | Power Query | Microsoft Fabric | Streamlit | Plotly | Jupyter | SQLite | APIs REST | ETL | IA aplicada (LLM/RAG) | Git/GitHub',
-  projects: 'churnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja',
+  skills: 'SQL | Python | Pandas | Excel | Power BI | DAX | Power Query | Microsoft Fabric | Streamlit | Plotly | Jupyter | SQLite | APIs REST | ETL | scikit-learn | IA aplicada (LLM/RAG) | Git/GitHub',
+  projects: 'steam-launch-radar &mdash; steam-launch-radar.vercel.app\nchurnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja\nclonador-de-voz &mdash; github.com/alvarodc093-pixel/clonador-de-voz',
   contact: 'Email: alvarodc093@gmail.com\nTel: 642 783 118\nLinkedIn: linkedin.com/in/alvaro-domingo\nGitHub: github.com/alvarodc093-pixel',
   exit: 'Cerrando terminal...'
 };
@@ -1409,7 +1445,8 @@ function processTerminal(e) {
     input.value = '';
     var line = document.createElement('div');
     line.className = 'term-line';
-    line.innerHTML = '<span class="term-prompt">alvaro@analyst:~$</span> ' + cmd;
+    line.innerHTML = '<span class="term-prompt">alvaro@analyst:~$</span> ';
+    line.appendChild(document.createTextNode(cmd));
     body.appendChild(line);
     if (cmd) { termHistory.push(cmd); termHistIdx = termHistory.length; }
     if (cmd === 'exit') {
