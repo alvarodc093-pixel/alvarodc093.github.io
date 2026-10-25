@@ -1,8 +1,15 @@
 # Álvaro Domingo Cordón — Portafolio
 
-CV y portafolio web de Álvaro Domingo Cordón, Data Analyst Junior.
+**CV y portafolio web de Álvaro Domingo Cordón, Data Analyst Junior.**
 
-**Web:** https://alvarodc093-pixel.github.io/alvarodc093.github.io/
+[![Web](https://img.shields.io/badge/Web-en%20vivo-2ea44f?style=flat-square)](https://alvarodc093-pixel.github.io/alvarodc093.github.io/) ![HTML](https://img.shields.io/badge/HTML-CSS%20%2B%20JS-E34F26?style=flat-square&logo=html5&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-deploy-222222?style=flat-square&logo=github&logoColor=white)
+
+![Portada del portafolio](docs/img/portada.png)
+
+## En resumen
+
+- **Qué es:** una sola página con perfil, experiencia, formación, habilidades y proyectos, cada uno con su demo y su repositorio.
+- **Detalles:** español e inglés, modo oscuro, versión imprimible y CV en PDF descargable.
 
 ## Contenido
 
