@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>&Aacute;lvaro Domingo Cord&oacute;n | Data Analyst Junior &amp; BI</title>
-<meta name="description" content="Portafolio de &Aacute;lvaro Domingo Cord&oacute;n, Data Analyst Junior. SQL, Python, Power BI, DAX, Power Query y Microsoft Fabric. Proyectos de anal&iacute;tica de datos aplicados a videojuegos y negocio, con demos en vivo.">
+<meta name="description" content="Portafolio de &Aacute;lvaro Domingo Cord&oacute;n, Data Analyst Junior. SQL, Python y Power BI: an&aacute;lisis de e-commerce en SQL, dashboard de ventas con DAX, A/B testing, segmentaci&oacute;n RFM y CLV, y modelos de machine learning con datos reales y demos en vivo.">
 <meta name="author" content="&Aacute;lvaro Domingo Cord&oacute;n">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#1a56db">
@@ -12,13 +12,13 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior &amp; BI">
-<meta property="og:description" content="Data Analyst Junior. SQL, Python, Power BI, DAX, Power Query y Microsoft Fabric. Proyectos con datos reales y demos interactivas.">
+<meta property="og:description" content="Data Analyst Junior. SQL, Python y Power BI: an&aacute;lisis de e-commerce, dashboards con DAX, A/B testing y segmentaci&oacute;n de clientes con datos reales.">
 <meta property="og:image" content="https://alvarodc093-pixel.github.io/alvarodc093.github.io/profile.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alvarodc093-pixel.github.io/alvarodc093.github.io/">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior &amp; BI">
-<meta name="twitter:description" content="Data Analyst Junior. SQL, Python, Power BI, DAX, Power Query y Microsoft Fabric. Proyectos con datos reales y demos interactivas.">
+<meta name="twitter:description" content="Data Analyst Junior. SQL, Python y Power BI: an&aacute;lisis de e-commerce, dashboards con DAX, A/B testing y segmentaci&oacute;n de clientes con datos reales.">
 <meta name="twitter:image" content="https://alvarodc093-pixel.github.io/alvarodc093.github.io/profile.jpg">
 <script type="application/ld+json">
 {
@@ -837,9 +837,9 @@ footer {
   <div class="container">
     <a href="#perfil" data-i18n="navProfile">Perfil</a>
     <a href="#skillsTitle" data-i18n="navSkills">Habilidades</a>
+    <a href="#projectsTitle" data-i18n="navProjects">Proyectos</a>
     <a href="#expTitle" data-i18n="navExp">Experiencia</a>
     <a href="#eduTitle" data-i18n="navEdu">Formaci&oacute;n</a>
-    <a href="#projectsTitle" data-i18n="navProjects">Proyectos</a>
     <a href="#contacto" data-i18n="navContact">Contacto</a>
   </div>
 </nav>
@@ -849,7 +849,7 @@ footer {
     <button id="themeToggle" onclick="toggleTheme()" title="Modo oscuro" class="theme-btn" aria-label="Activar modo oscuro">&#9790;</button>
     <button id="langEs" class="active" onclick="switchLanguage('es')" title="Espa&ntilde;ol" aria-label="Espa&ntilde;ol"><svg viewBox="0 0 60 40" width="20" height="14" aria-hidden="true"><rect width="60" height="40" fill="#c60b1e"/><rect y="10" width="60" height="20" fill="#ffc400"/></svg></button>
     <button id="langEn" onclick="switchLanguage('en')" title="English" aria-label="English"><svg viewBox="0 0 60 40" width="20" height="14" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><rect x="0" y="16" width="60" height="8" fill="#fff"/><rect x="26" y="0" width="8" height="40" fill="#fff"/><rect x="0" y="18" width="60" height="4" fill="#c8102e"/><rect x="28" y="0" width="4" height="40" fill="#c8102e"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0 L60 40 M60 0 L0 40" stroke="#c8102e" stroke-width="4"/></svg></button>
-    <a href="CV_Alvaro_Domingo.pdf" download class="cv-download-btn" title="Descargar CV" aria-label="Descargar CV">&#128196;</a>
+    <a href="CV_Alvaro_Domingo.pdf" download id="cvLink" class="cv-download-btn" title="Descargar CV" aria-label="Descargar CV">&#128196;</a>
     <button onclick="window.print()" title="Imprimir" class="theme-btn" style="font-size:0.85rem!important" aria-label="Imprimir">&#128424;</button>
   </div>
   <div class="container">
@@ -872,16 +872,16 @@ footer {
 <main class="container" role="main">
 
   <div class="profile-card" id="perfil" aria-label="Perfil profesional">
-    <p data-i18n="profile"><strong>Data Analyst Junior</strong> formado en <strong>Upgrade Hub</strong> (SQL, Python, Power BI, DAX, Power Query y Microsoft Fabric). Me especializo en convertir datos en decisiones de negocio, sobre todo en el sector de los <strong>videojuegos y el entretenimiento digital</strong>. Vengo del sector dental, donde trabaj&eacute; con herramientas digitales y flujos de alta precisi&oacute;n: de ah&iacute; aporto atenci&oacute;n al detalle, rigor y orientaci&oacute;n al cliente. Busco mi <strong>primera oportunidad como Data Analyst junior</strong> para seguir creciendo y aportar desde el primer d&iacute;a.</p>
+    <p data-i18n="profile"><strong>Data Analyst Junior</strong> formado en <strong>Upgrade Hub</strong>. Convierto datos en decisiones de negocio con <strong>SQL, Python y Power BI</strong>: consultas con funciones de ventana, dashboards con DAX, <strong>A/B testing</strong> y <strong>segmentaci&oacute;n de clientes (RFM y CLV)</strong>, siempre con datos reales, tests y resultados reproducibles. Vengo del sector dental, donde trabaj&eacute; con herramientas digitales y flujos de alta precisi&oacute;n: de ah&iacute; aporto atenci&oacute;n al detalle, rigor y orientaci&oacute;n al cliente. Busco mi <strong>primera oportunidad como Data Analyst junior</strong>.</p>
     <div class="profile-meta">
       <span class="meta-chip" data-i18n="metaRole">Primera oportunidad &middot; Junior</span>
       <span class="meta-chip" data-i18n="metaMode">Remoto o h&iacute;brido</span>
       <span class="meta-chip" data-i18n="metaLoc">Espa&ntilde;a &middot; C&aacute;diz y Sevilla</span>
-      <span class="meta-chip" data-i18n="metaSector">Sectores: videojuegos y tecnolog&iacute;a</span>
+      <span class="meta-chip" data-i18n="metaSector">Sectores: tecnolog&iacute;a, e-commerce y videojuegos</span>
     </div>
     <div class="stats-row" role="group" aria-label="Cifras del portafolio">
-      <div class="stat"><span class="stat-num">11</span><span class="stat-label" data-i18n="stat1">Proyectos publicados</span></div>
-      <div class="stat"><span class="stat-num">64K+</span><span class="stat-label" data-i18n="stat2">Registros analizados</span></div>
+      <div class="stat"><span class="stat-num">15</span><span class="stat-label" data-i18n="stat1">Proyectos publicados</span></div>
+      <div class="stat"><span class="stat-num">1M+</span><span class="stat-label" data-i18n="stat2">Registros analizados</span></div>
       <div class="stat"><span class="stat-num">10</span><span class="stat-label" data-i18n="stat3">Demos en vivo</span></div>
     </div>
   </div>
@@ -893,6 +893,7 @@ footer {
         <h3 data-i18n="skillCat1">Lenguajes y an&aacute;lisis de datos</h3>
         <div class="skills-tags">
           <span class="skill-tag">SQL</span>
+          <span class="skill-tag">DuckDB</span>
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Pandas</span>
           <span class="skill-tag">Excel</span>
@@ -905,6 +906,15 @@ footer {
           <span class="skill-tag">DAX</span>
           <span class="skill-tag">Power Query</span>
           <span class="skill-tag">Microsoft Fabric</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 data-i18n="skillCat5">Estad&iacute;stica y experimentaci&oacute;n</h3>
+        <div class="skills-tags">
+          <span class="skill-tag">A/B testing</span>
+          <span class="skill-tag">Inferencia estad&iacute;stica</span>
+          <span class="skill-tag">SciPy &middot; statsmodels</span>
+          <span class="skill-tag">Segmentaci&oacute;n RFM &middot; CLV</span>
         </div>
       </div>
       <div class="skill-group">
@@ -927,6 +937,150 @@ footer {
         </div>
       </div>
     </div>
+  </section>
+
+  <section aria-labelledby="projectsTitle">
+    <h2 class="section-title" data-i18n="projectsTitle" id="projectsTitle">Proyectos Destacados</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj12Tag">SQL &middot; An&aacute;lisis de negocio</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj12Title">Olist en SQL &mdash; E-commerce real</a></h3>
+        <p data-i18n="proj12Desc">&iquest;De d&oacute;nde sale el crecimiento de un marketplace y qu&eacute; lo frena? 11 consultas SQL sobre 97.905 pedidos reales: cohortes, recompra, Pareto de categor&iacute;as, log&iacute;stica y vendedores. Solo el 3 % de los clientes repite y un retraso de m&aacute;s de una semana hunde la nota de 4,3 a 1,7. 20 tests.</p>
+        <div class="tech-stack"><span>SQL</span><span>DuckDB</span><span>Window functions</span><span>Python</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis#hallazgos-principales" target="_blank" rel="noopener" class="demo-btn" data-i18n="findingsBtn">Ver hallazgos</a>
+          <a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj13Tag">Power BI &middot; Dashboard</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Contoso-Retail-PowerBI" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj13Title">Contoso Retail &mdash; Ventas en Power BI</a></h3>
+        <p data-i18n="proj13Desc">&iquest;C&oacute;mo van las ventas de una cadena de tiendas frente al a&ntilde;o anterior y al presupuesto? Informe de 5 p&aacute;ginas con modelo en estrella y 28 medidas DAX sobre 224.000 ventas: 2025 cae un 7,5 %, cumple el 85,7 % del objetivo y el online ya vende m&aacute;s que todas las tiendas f&iacute;sicas.</p>
+        <div class="tech-stack"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>SQL</span><span>DuckDB</span></div>
+        <div class="card-actions">
+          <a href="https://github.com/alvarodc093-pixel/Contoso-Retail-PowerBI#las-5-p%C3%A1ginas" target="_blank" rel="noopener" class="demo-btn" data-i18n="screensBtn">Ver capturas</a>
+          <a href="https://github.com/alvarodc093-pixel/Contoso-Retail-PowerBI" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj14Tag">Estad&iacute;stica &middot; Experimentaci&oacute;n</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj14Title">A/B test &mdash; &iquest;Funcionan los anuncios?</a></h3>
+        <p data-i18n="proj14Desc">Experimento con 588.101 usuarios: los anuncios suben la conversi&oacute;n un 43 % (IC 95 % +30 % a +58 %), confirmado con bootstrap, enfoque bayesiano y regresi&oacute;n log&iacute;stica. Solo el 30 % de las compras se deben a los anuncios y el efecto aparece a partir de 25 impresiones.</p>
+        <div class="tech-stack"><span>Python</span><span>SciPy</span><span>statsmodels</span><span>A/B testing</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test/blob/main/analisis.ipynb" target="_blank" rel="noopener" class="demo-btn" data-i18n="analysisBtn">Ver an&aacute;lisis</a>
+          <a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj15Tag">Clientes &middot; CLV</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj15Title">Segmentaci&oacute;n RFM y valor de vida del cliente</a></h3>
+        <p data-i18n="proj15Desc">&iquest;A qu&eacute; clientes cuidar, recuperar o dejar? 10 segmentos RFM sobre 5.852 clientes de una tienda online y valor de vida con BG/NBD + Gamma-Gamma programados desde cero. Validado en 6 meses no vistos: acierta las compras con un 2 % de error y su top 20 % concentra el 73 % del gasto real.</p>
+        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>SciPy</span><span>RFM</span><span>CLV</span></div>
+        <div class="card-actions">
+          <a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM/blob/main/analisis.ipynb" target="_blank" rel="noopener" class="demo-btn" data-i18n="analysisBtn">Ver an&aacute;lisis</a>
+          <a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj7Tag">ML &middot; Producto de datos</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/steam-launch-radar" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj7Title">Steam Launch Radar &mdash; Lanzamientos en Steam</a></h3>
+        <p data-i18n="proj7Desc">&iquest;Va bien el lanzamiento de un juego? Con las rese&ntilde;as de sus primeros 3, 7 o 14 d&iacute;as estima cu&aacute;ntas tendr&aacute; al mes y si es mucho o poco para su g&eacute;nero. 3.019 lanzamientos reales, modelos validados por fecha y app web.</p>
+        <div class="tech-stack"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Next.js</span><span>TypeScript</span></div>
+        <div class="card-actions">
+          <a href="https://steam-launch-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/steam-launch-radar" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj9Tag">Series temporales &middot; ML</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Energia-Solar" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj9Title">Solar Espa&ntilde;a &mdash; Previsi&oacute;n fotovoltaica</a></h3>
+        <p data-i18n="proj9Desc">&iquest;Cu&aacute;nta energ&iacute;a solar producir&aacute; Espa&ntilde;a ma&ntilde;ana? Datos de REE y Open-Meteo, 5 modelos comparados con 3 baselines (el mejor acierta el 84,5 %) y una app que predice el d&iacute;a siguiente con la previsi&oacute;n real. Datos y modelo se actualizan cada semana.</p>
+        <div class="tech-stack"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Streamlit</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://solar-espana.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Energia-Solar" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj1Tag">ML &middot; Churn</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Churnguard-Player-Retention" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj1Title">ChurnGuard &mdash; Retenci&oacute;n de jugadores</a></h3>
+        <p data-i18n="proj1Desc">&iquest;Por qu&eacute; se van los jugadores de un juego free-to-play? Analic&eacute; datos de retenci&oacute;n, segment&eacute; jugadores por riesgo de abandono y constru&iacute; un modelo de churn con una web interactiva de apoyo a decisiones.</p>
+        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Jupyter</span><span>HTML/CSS/JS</span></div>
+        <div class="card-actions">
+          <a href="https://no-pain-no-game.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Churnguard-Player-Retention" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj10Tag">Ingenier&iacute;a de datos &middot; Web</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/GameScope" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj10Title">GameScope &mdash; Comparador de competidores</a></h3>
+        <p data-i18n="proj10Desc">&iquest;C&oacute;mo se posiciona un juego frente a sus competidores? Cruza 1.131 juegos de IGDB, RAWG y CheapShark sin mezclar escalas, guarda snapshots semanales para ver la evoluci&oacute;n y los muestra en una web est&aacute;tica. 61 tests.</p>
+        <div class="tech-stack"><span>Python</span><span>APIs REST</span><span>JavaScript</span><span>GitHub Actions</span><span>unittest</span></div>
+        <div class="card-actions">
+          <a href="https://gamescope-comparador.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/GameScope" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj2Tag">Dashboard &middot; API</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Twitch-Audience-Analytics" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj2Title">Twitch Game Pulse &mdash; Audiencia en Twitch</a></h3>
+        <p data-i18n="proj2Desc">&iquest;Qu&eacute; juegos ganan o pierden audiencia? Snapshots diarios del top 100 de Twitch con su API, guardados en SQLite por una ingesta autom&aacute;tica (GitHub Actions), y dashboard con ranking, crecimiento y variabilidad.</p>
+        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Twitch API</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://twitch-game-pulse.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Twitch-Audience-Analytics" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj11Tag">Producto de datos &middot; API</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Orbita" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj11Title">&Oacute;rbita &mdash; La industria espacial en cifras</a></h3>
+        <p data-i18n="proj11Desc">&iquest;Qui&eacute;n lanza al espacio y con qu&eacute; fiabilidad? 8.120 lanzamientos desde 1957 de la API Launch Library 2 en SQLite, con ingesta semanal autom&aacute;tica y un dashboard con agencias, cohetes, astronautas y pr&oacute;ximos lanzamientos.</p>
+        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Plotly</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://orbita-espacio.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Orbita" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj4Tag">Producto de datos &middot; RAG</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Datajob" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj4Title">DataJobs Radar &mdash; Empleo Data Analyst</a></h3>
+        <p data-i18n="proj4Desc">&iquest;Qu&eacute; piden las empresas a un Data Analyst? Ingesta de ofertas reales de Adzuna en SQLite y app Streamlit con chat RAG: habilidades m&aacute;s pedidas, salarios y demanda por pa&iacute;s.</p>
+        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Adzuna API</span><span>RAG</span></div>
+        <div class="card-actions">
+          <a href="https://datajobs-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Datajob" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj3Tag">EDA &middot; 64K registros</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Video-Game-Market-Analysis" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj3Title">An&aacute;lisis del mercado de videojuegos</a></h3>
+        <p data-i18n="proj3Desc">EDA de m&aacute;s de 64.000 videojuegos (VGChartz 2024) para responder preguntas de negocio: g&eacute;neros y plataformas que m&aacute;s venden, publishers l&iacute;deres, evoluci&oacute;n del mercado y diferencias regionales.</p>
+        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Jupyter</span><span>Seaborn</span><span>Streamlit</span></div>
+        <div class="card-actions">
+          <a href="https://video-game-market-analysis.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Video-Game-Market-Analysis" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj5Tag">RAG &middot; Streamlit</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Video-Game-Rag-Assistant" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj5Title">VideoGame Radar &mdash; Descubrimiento con IA</a></h3>
+        <p data-i18n="proj5Desc">Cat&aacute;logo de los 1.000 juegos m&aacute;s populares de RAWG en SQLite, con b&uacute;squeda por g&eacute;nero, plataforma o etiqueta y chat RAG para pedir recomendaciones.</p>
+        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>RAWG API</span><span>Chroma</span></div>
+        <div class="card-actions">
+          <a href="https://videogame-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
+          <a href="https://github.com/alvarodc093-pixel/Video-Game-Rag-Assistant" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="moreRepos">
+    <button class="repo-toggle" id="repoToggle" onclick="toggleRepos()">
+      <span class="repo-toggle-arrow">&#9654;</span>
+      <span data-i18n="moreReposTitle">M&aacute;s Repositorios</span>
+    </button>
+    <div class="repo-grid" id="repoGrid"></div>
   </section>
 
   <section aria-labelledby="expTitle">
@@ -969,7 +1123,7 @@ footer {
       <div class="edu-card">
         <h3 data-i18n="edu1Title">Bootcamp de Data Analyst e IA</h3>
         <p class="institution" data-i18n="edu1Inst">Upgrade Hub</p>
-        <p class="year" data-i18n="edu1Year">2026 &mdash; En curso</p>
+        <p class="year" data-i18n="edu1Year">May 2026 &mdash; Oct 2026</p>
       </div>
       <div class="edu-card">
         <h3 data-i18n="edu2Title">T&eacute;cnico Superior en Pr&oacute;tesis Dentales</h3>
@@ -998,168 +1152,6 @@ footer {
     </div>
   </section>
 
-  <section aria-labelledby="projectsTitle">
-    <h2 class="section-title" data-i18n="projectsTitle" id="projectsTitle">Proyectos Destacados</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj7Tag">ML &middot; Producto de datos</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/steam-launch-radar" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj7Title">Steam Launch Radar &mdash; Lanzamientos en Steam</a></h3>
-        <p data-i18n="proj7Desc">&iquest;Va bien el lanzamiento de un juego? Con las rese&ntilde;as de sus primeros 3, 7 o 14 d&iacute;as estima cu&aacute;ntas tendr&aacute; al mes y si es mucho o poco para su g&eacute;nero. 3.019 lanzamientos reales, modelos validados por fecha y app web.</p>
-        <div class="tech-stack"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Next.js</span><span>TypeScript</span></div>
-        <div class="card-actions">
-          <a href="https://steam-launch-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/steam-launch-radar" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj12Tag">SQL &middot; An&aacute;lisis de negocio</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj12Title">Olist en SQL &mdash; E-commerce real</a></h3>
-        <p data-i18n="proj12Desc">&iquest;De d&oacute;nde sale el crecimiento de un marketplace y qu&eacute; lo frena? 11 consultas SQL sobre 97.905 pedidos reales: cohortes, recompra, Pareto de categor&iacute;as, log&iacute;stica y vendedores. Solo el 3 % de los clientes repite y un retraso de m&aacute;s de una semana hunde la nota de 4,3 a 1,7. 20 tests.</p>
-        <div class="tech-stack"><span>SQL</span><span>DuckDB</span><span>Window functions</span><span>Python</span><span>GitHub Actions</span></div>
-        <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis#hallazgos-principales" target="_blank" rel="noopener" class="demo-btn" data-i18n="findingsBtn">Ver hallazgos</a>
-          <a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj13Tag">Power BI &middot; Dashboard</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Contoso-Retail-PowerBI" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj13Title">Contoso Retail &mdash; Ventas en Power BI</a></h3>
-        <p data-i18n="proj13Desc">&iquest;C&oacute;mo van las ventas de una cadena de tiendas frente al a&ntilde;o anterior y al presupuesto? Informe de 5 p&aacute;ginas con modelo en estrella y 28 medidas DAX sobre 224.000 ventas: 2025 cae un 7,5 %, cumple el 85,7 % del objetivo y el online ya vende m&aacute;s que todas las tiendas f&iacute;sicas.</p>
-        <div class="tech-stack"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>SQL</span><span>DuckDB</span></div>
-        <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/Contoso-Retail-PowerBI#las-5-p%C3%A1ginas" target="_blank" rel="noopener" class="demo-btn" data-i18n="screensBtn">Ver capturas</a>
-          <a href="https://github.com/alvarodc093-pixel/Contoso-Retail-PowerBI" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj14Tag">Estad&iacute;stica &middot; Experimentaci&oacute;n</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj14Title">A/B test &mdash; &iquest;Funcionan los anuncios?</a></h3>
-        <p data-i18n="proj14Desc">Experimento con 588.101 usuarios: los anuncios suben la conversi&oacute;n un 43 % (IC 95 % +30 % a +58 %), confirmado con bootstrap, enfoque bayesiano y regresi&oacute;n log&iacute;stica. Solo el 30 % de las compras se deben a los anuncios y el efecto aparece a partir de 25 impresiones.</p>
-        <div class="tech-stack"><span>Python</span><span>SciPy</span><span>statsmodels</span><span>A/B testing</span><span>GitHub Actions</span></div>
-        <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test/blob/main/analisis.ipynb" target="_blank" rel="noopener" class="demo-btn" data-i18n="analysisBtn">Ver an&aacute;lisis</a>
-          <a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj15Tag">Clientes &middot; CLV</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj15Title">Segmentaci&oacute;n RFM y valor de vida del cliente</a></h3>
-        <p data-i18n="proj15Desc">&iquest;A qu&eacute; clientes cuidar, recuperar o dejar? 10 segmentos RFM sobre 5.852 clientes de una tienda online y valor de vida con BG/NBD + Gamma-Gamma programados desde cero. Validado en 6 meses no vistos: acierta las compras con un 2 % de error y su top 20 % concentra el 73 % del gasto real.</p>
-        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>SciPy</span><span>RFM</span><span>CLV</span></div>
-        <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM/blob/main/analisis.ipynb" target="_blank" rel="noopener" class="demo-btn" data-i18n="analysisBtn">Ver an&aacute;lisis</a>
-          <a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj9Tag">Series temporales &middot; ML</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Energia-Solar" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj9Title">Solar Espa&ntilde;a &mdash; Previsi&oacute;n fotovoltaica</a></h3>
-        <p data-i18n="proj9Desc">&iquest;Cu&aacute;nta energ&iacute;a solar producir&aacute; Espa&ntilde;a ma&ntilde;ana? Datos de REE y Open-Meteo, 5 modelos comparados con 3 baselines (el mejor acierta el 84,5 %) y una app que predice el d&iacute;a siguiente con la previsi&oacute;n real. Datos y modelo se actualizan cada semana.</p>
-        <div class="tech-stack"><span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Streamlit</span><span>GitHub Actions</span></div>
-        <div class="card-actions">
-          <a href="https://solar-espana.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Energia-Solar" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj1Tag">ML &middot; Churn</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Churnguard-Player-Retention" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj1Title">ChurnGuard &mdash; Retenci&oacute;n de jugadores</a></h3>
-        <p data-i18n="proj1Desc">&iquest;Por qu&eacute; se van los jugadores de un juego free-to-play? Analic&eacute; datos de retenci&oacute;n, segment&eacute; jugadores por riesgo de abandono y constru&iacute; un modelo de churn con una web interactiva de apoyo a decisiones.</p>
-        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Jupyter</span><span>HTML/CSS/JS</span></div>
-        <div class="card-actions">
-          <a href="https://no-pain-no-game.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Churnguard-Player-Retention" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj2Tag">Dashboard &middot; API</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Twitch-Audience-Analytics" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj2Title">Twitch Game Pulse &mdash; Audiencia en Twitch</a></h3>
-        <p data-i18n="proj2Desc">&iquest;Qu&eacute; juegos ganan o pierden audiencia? Snapshots diarios del top 100 de Twitch con su API, guardados en SQLite por una ingesta autom&aacute;tica (GitHub Actions), y dashboard con ranking, crecimiento y variabilidad.</p>
-        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Twitch API</span><span>GitHub Actions</span></div>
-        <div class="card-actions">
-          <a href="https://twitch-game-pulse.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Twitch-Audience-Analytics" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj10Tag">Ingenier&iacute;a de datos &middot; Web</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/GameScope" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj10Title">GameScope &mdash; Comparador de competidores</a></h3>
-        <p data-i18n="proj10Desc">&iquest;C&oacute;mo se posiciona un juego frente a sus competidores? Cruza 1.131 juegos de IGDB, RAWG y CheapShark sin mezclar escalas, guarda snapshots semanales para ver la evoluci&oacute;n y los muestra en una web est&aacute;tica. 61 tests.</p>
-        <div class="tech-stack"><span>Python</span><span>APIs REST</span><span>JavaScript</span><span>GitHub Actions</span><span>unittest</span></div>
-        <div class="card-actions">
-          <a href="https://gamescope-comparador.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/GameScope" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj11Tag">Producto de datos &middot; API</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Orbita" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj11Title">&Oacute;rbita &mdash; La industria espacial en cifras</a></h3>
-        <p data-i18n="proj11Desc">&iquest;Qui&eacute;n lanza al espacio y con qu&eacute; fiabilidad? 8.120 lanzamientos desde 1957 de la API Launch Library 2 en SQLite, con ingesta semanal autom&aacute;tica y un dashboard con agencias, cohetes, astronautas y pr&oacute;ximos lanzamientos.</p>
-        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Plotly</span><span>GitHub Actions</span></div>
-        <div class="card-actions">
-          <a href="https://orbita-espacio.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Orbita" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj3Tag">EDA &middot; 64K registros</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Video-Game-Market-Analysis" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj3Title">An&aacute;lisis del mercado de videojuegos</a></h3>
-        <p data-i18n="proj3Desc">EDA de m&aacute;s de 64.000 videojuegos (VGChartz 2024) para responder preguntas de negocio: g&eacute;neros y plataformas que m&aacute;s venden, publishers l&iacute;deres, evoluci&oacute;n del mercado y diferencias regionales.</p>
-        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Jupyter</span><span>Seaborn</span><span>Streamlit</span></div>
-        <div class="card-actions">
-          <a href="https://video-game-market-analysis.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Video-Game-Market-Analysis" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj4Tag">Producto de datos &middot; RAG</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Datajob" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj4Title">DataJobs Radar &mdash; Empleo Data Analyst</a></h3>
-        <p data-i18n="proj4Desc">&iquest;Qu&eacute; piden las empresas a un Data Analyst? Ingesta de ofertas reales de Adzuna en SQLite y app Streamlit con chat RAG: habilidades m&aacute;s pedidas, salarios y demanda por pa&iacute;s.</p>
-        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>Adzuna API</span><span>RAG</span></div>
-        <div class="card-actions">
-          <a href="https://datajobs-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Datajob" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj5Tag">RAG &middot; Streamlit</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Video-Game-Rag-Assistant" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj5Title">VideoGame Radar &mdash; Descubrimiento con IA</a></h3>
-        <p data-i18n="proj5Desc">Cat&aacute;logo de los 1.000 juegos m&aacute;s populares de RAWG en SQLite, con b&uacute;squeda por g&eacute;nero, plataforma o etiqueta y chat RAG para pedir recomendaciones.</p>
-        <div class="tech-stack"><span>Python</span><span>SQLite</span><span>Streamlit</span><span>RAWG API</span><span>Chroma</span></div>
-        <div class="card-actions">
-          <a href="https://videogame-radar.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Video-Game-Rag-Assistant" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj6Tag">Web &middot; Frontend</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj6Title">Gu&iacute;a Pok&eacute;mon RF/VH &mdash; Web interactiva</a></h3>
-        <p data-i18n="proj6Desc">Gu&iacute;a web de Pok&eacute;mon Rojo Fuego y Verde Hoja con Pok&eacute;dex online y datos en vivo desde Pok&eacute;API. HTML, CSS y JavaScript sin frameworks.</p>
-        <div class="tech-stack"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Pok&eacute;API</span></div>
-        <div class="card-actions">
-          <a href="https://pokemon-rojo-fuego-verde-hojavercel.vercel.app" target="_blank" rel="noopener" class="demo-btn" data-i18n="demoBtn">Ver demo</a>
-          <a href="https://github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <span class="project-tag" data-i18n="proj8Tag">IA &middot; Audio</span>
-        <h3><a href="https://github.com/alvarodc093-pixel/clonador-de-voz" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj8Title">Clonador de voz &mdash; Bot y app</a></h3>
-        <p data-i18n="proj8Desc">Extrae el audio de un v&iacute;deo, clona una voz con modelos abiertos (Chatterbox, Seed-VC, Demucs) y la mezcla sobre una base musical. Bot de l&iacute;nea de comandos, app Streamlit y 79 tests.</p>
-        <div class="tech-stack"><span>Python</span><span>Streamlit</span><span>PyTorch</span><span>FFmpeg</span><span>pytest</span></div>
-        <div class="card-actions">
-          <a href="https://github.com/alvarodc093-pixel/clonador-de-voz" target="_blank" rel="noopener" class="demo-btn" data-i18n="repoBtn">Ver repositorio</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="moreRepos">
-    <button class="repo-toggle" id="repoToggle" onclick="toggleRepos()">
-      <span class="repo-toggle-arrow">&#9654;</span>
-      <span data-i18n="moreReposTitle">M&aacute;s Repositorios</span>
-    </button>
-    <div class="repo-grid" id="repoGrid"></div>
-  </section>
 
 </main>
 
@@ -1205,11 +1197,11 @@ footer {
 <script>
 var translations = {
   es: {
-    profile: "Data Analyst Junior formado en Upgrade Hub (SQL, Python, Power BI, DAX, Power Query y Microsoft Fabric). Me especializo en convertir datos en decisiones de negocio, sobre todo en el sector de los videojuegos y el entretenimiento digital. Vengo del sector dental, donde trabaj\u00e9 con herramientas digitales y flujos de alta precisi\u00f3n: de ah\u00ed aporto atenci\u00f3n al detalle, rigor y orientaci\u00f3n al cliente. Busco mi primera oportunidad como Data Analyst junior para seguir creciendo y aportar desde el primer d\u00eda.",
+    profile: "<strong>Data Analyst Junior</strong> formado en <strong>Upgrade Hub</strong>. Convierto datos en decisiones de negocio con <strong>SQL, Python y Power BI</strong>: consultas con funciones de ventana, dashboards con DAX, <strong>A/B testing</strong> y <strong>segmentaci\u00f3n de clientes (RFM y CLV)</strong>, siempre con datos reales, tests y resultados reproducibles. Vengo del sector dental, donde trabaj\u00e9 con herramientas digitales y flujos de alta precisi\u00f3n: de ah\u00ed aporto atenci\u00f3n al detalle, rigor y orientaci\u00f3n al cliente. Busco mi <strong>primera oportunidad como Data Analyst junior</strong>.",
     metaRole: "Primera oportunidad \u00b7 Junior",
     metaMode: "Remoto o h\u00edbrido",
     metaLoc: "Espa\u00f1a \u00b7 C\u00e1diz y Sevilla",
-    metaSector: "Sectores: videojuegos y tecnolog\u00eda",
+    metaSector: "Sectores: tecnolog\u00eda, e-commerce y videojuegos",
     stat1: "Proyectos publicados",
     stat2: "Registros analizados",
     stat3: "Demos en vivo",
@@ -1229,7 +1221,7 @@ var translations = {
     eduTitle: "Formaci\u00f3n",
     edu1Title: "Bootcamp de Data Analyst e IA",
     edu1Inst: "Upgrade Hub",
-    edu1Year: "2026 \u2014 En curso",
+    edu1Year: "May 2026 \u2014 Oct 2026",
     edu2Title: "T\u00e9cnico Superior en Pr\u00f3tesis Dentales",
     edu2Inst: "Escuela Esprohident",
     edu3Title: "T\u00e9cnico Superior en Higiene Bucodental",
@@ -1239,6 +1231,7 @@ var translations = {
     skillCat2: "Business Intelligence",
     skillCat3: "Visualizaci\u00f3n y aplicaciones",
     skillCat4: "Datos, IA y herramientas",
+    skillCat5: "Estad\u00edstica y experimentaci\u00f3n",
     langTitle: "Idiomas",
     lang1Name: "Espa\u00f1ol",
     lang1Level: "Nativo",
@@ -1310,11 +1303,11 @@ var translations = {
     navContact: "Contacto"
   },
   en: {
-    profile: "Junior Data Analyst trained at Upgrade Hub (SQL, Python, Power BI, DAX, Power Query and Microsoft Fabric). I specialise in turning data into business decisions, especially in the video game and digital entertainment industry. I come from the dental sector, where I worked with digital tools and high-precision workflows: from there I bring attention to detail, rigour and a client-oriented mindset. I am looking for my first opportunity as a junior Data Analyst to keep growing and contribute from day one.",
+    profile: "<strong>Junior Data Analyst</strong> trained at <strong>Upgrade Hub</strong>. I turn data into business decisions with <strong>SQL, Python and Power BI</strong>: window-function queries, DAX dashboards, <strong>A/B testing</strong> and <strong>customer segmentation (RFM and CLV)</strong>, always with real data, tests and reproducible results. I come from the dental sector, where I worked with digital tools and high-precision workflows, which gives me attention to detail, rigour and a client focus. I am looking for my <strong>first role as a junior Data Analyst</strong>.",
     metaRole: "First opportunity \u00b7 Junior",
     metaMode: "Remote or hybrid",
     metaLoc: "Spain \u00b7 C\u00e1diz and Seville",
-    metaSector: "Sectors: video games and tech",
+    metaSector: "Sectors: tech, e-commerce and video games",
     stat1: "Published projects",
     stat2: "Records analysed",
     stat3: "Live demos",
@@ -1334,7 +1327,7 @@ var translations = {
     eduTitle: "Education",
     edu1Title: "Data Analyst & AI Bootcamp",
     edu1Inst: "Upgrade Hub",
-    edu1Year: "2026 \u2014 Ongoing",
+    edu1Year: "May 2026 \u2014 Oct 2026",
     edu2Title: "Higher Technician in Dental Prosthetics",
     edu2Inst: "Escuela Esprohident",
     edu3Title: "Higher Technician in Oral Hygiene",
@@ -1344,6 +1337,7 @@ var translations = {
     skillCat2: "Business Intelligence",
     skillCat3: "Visualisation and applications",
     skillCat4: "Data, AI and tools",
+    skillCat5: "Statistics and experimentation",
     langTitle: "Languages",
     lang1Name: "Spanish",
     lang1Level: "Native",
@@ -1422,6 +1416,8 @@ function switchLanguage(lang, skipSave) {
   document.documentElement.lang = lang;
   if (!skipSave) { try { localStorage.setItem('lang', lang); } catch (e) {} }
   var t = translations[lang];
+  var cv = document.getElementById('cvLink');
+  if (cv) cv.setAttribute('href', lang === 'en' ? 'CV_Alvaro_Domingo_EN.pdf' : 'CV_Alvaro_Domingo.pdf');
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     var key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) {
@@ -1487,7 +1483,7 @@ function toggleTheme() {
 }
 
 (function() {
-  var excluded = ['steam-launch-radar', 'Olist-SQL-Analysis', 'Contoso-Retail-PowerBI', 'Marketing-AB-Test', 'Customer-Segmentation-RFM', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'Guia-Pokemon-rojo-fuego-y-verde-hoja', 'clonador-de-voz', 'alvarodc093.github.io', 'alvarodc093-pixel'];
+  var excluded = ['steam-launch-radar', 'Olist-SQL-Analysis', 'Contoso-Retail-PowerBI', 'Marketing-AB-Test', 'Customer-Segmentation-RFM', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'alvarodc093.github.io', 'alvarodc093-pixel'];
   var langColors = {
     Python: '#3572A5', 'Jupyter Notebook': '#DA5B0B', JavaScript: '#f1e05a',
     HTML: '#e34c26', CSS: '#563d7c', TypeScript: '#3178c6', Shell: '#89e051',

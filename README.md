@@ -9,13 +9,13 @@
 ## En resumen
 
 - **Qué es:** una sola página con perfil, experiencia, formación, habilidades y proyectos, cada uno con su demo y su repositorio.
-- **Detalles:** español e inglés, modo oscuro, versión imprimible y CV en PDF descargable.
+- **Detalles:** español e inglés, modo oscuro y CV en PDF (español e inglés) generado desde código.
 
 ## Contenido
 
 - Perfil, experiencia, formación, habilidades e idiomas.
 - Proyectos destacados, cada uno con su demo y su repositorio, y una lista de los demás repositorios públicos que se carga desde la API de GitHub.
-- CV en PDF descargable y versión imprimible de la propia página.
+- CV en PDF de una página en español e inglés. El botón de descarga da el del idioma activo.
 
 ## Detalles técnicos
 
@@ -31,8 +31,12 @@
 ├── index.html               # Toda la web
 ├── 404.html                 # Página de error
 ├── profile.jpg              # Foto
-└── CV_Alvaro_Domingo.pdf    # CV descargable
+├── CV_Alvaro_Domingo.pdf    # CV en español
+├── CV_Alvaro_Domingo_EN.pdf # CV en inglés
+└── cv/generar_cv.py         # genera los dos PDF (una columna, legible por los ATS)
 ```
+
+Para actualizar el CV: editar los datos en `cv/generar_cv.py` y ejecutar `python cv/generar_cv.py` (usa Microsoft Edge para imprimir el PDF).
 
 GitHub Pages publica la rama `main` tal cual.
 
