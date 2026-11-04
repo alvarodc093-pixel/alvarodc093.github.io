@@ -1012,6 +1012,16 @@ footer {
         </div>
       </div>
       <div class="project-card">
+        <span class="project-tag" data-i18n="proj12Tag">SQL &middot; An&aacute;lisis de negocio</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj12Title">Olist en SQL &mdash; E-commerce real</a></h3>
+        <p data-i18n="proj12Desc">&iquest;De d&oacute;nde sale el crecimiento de un marketplace y qu&eacute; lo frena? 11 consultas SQL sobre 97.905 pedidos reales: cohortes, recompra, Pareto de categor&iacute;as, log&iacute;stica y vendedores. Solo el 3 % de los clientes repite y un retraso de m&aacute;s de una semana hunde la nota de 4,3 a 1,7. 20 tests.</p>
+        <div class="tech-stack"><span>SQL</span><span>DuckDB</span><span>Window functions</span><span>Python</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis#hallazgos-principales" target="_blank" rel="noopener" class="demo-btn" data-i18n="findingsBtn">Ver hallazgos</a>
+          <a href="https://github.com/alvarodc093-pixel/Olist-SQL-Analysis" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
         <span class="project-tag" data-i18n="proj9Tag">Series temporales &middot; ML</span>
         <h3><a href="https://github.com/alvarodc093-pixel/Energia-Solar" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj9Title">Solar Espa&ntilde;a &mdash; Previsi&oacute;n fotovoltaica</a></h3>
         <p data-i18n="proj9Desc">&iquest;Cu&aacute;nta energ&iacute;a solar producir&aacute; Espa&ntilde;a ma&ntilde;ana? Datos de REE y Open-Meteo, 5 modelos comparados con 3 baselines (el mejor acierta el 84,5 %) y una app que predice el d&iacute;a siguiente con la previsi&oacute;n real. Datos y modelo se actualizan cada semana.</p>
@@ -1237,6 +1247,10 @@ var translations = {
     proj11Tag: "Producto de datos \u00b7 API",
     proj11Title: "\u00d3rbita \u2014 La industria espacial en cifras",
     proj11Desc: "\u00bfQui\u00e9n lanza al espacio y con qu\u00e9 fiabilidad? 8.120 lanzamientos desde 1957 de la API Launch Library 2 en SQLite, con ingesta semanal autom\u00e1tica y un dashboard con agencias, cohetes, astronautas y pr\u00f3ximos lanzamientos.",
+    proj12Tag: "SQL \u00b7 An\u00e1lisis de negocio",
+    proj12Title: "Olist en SQL \u2014 E-commerce real",
+    proj12Desc: "\u00bfDe d\u00f3nde sale el crecimiento de un marketplace y qu\u00e9 lo frena? 11 consultas SQL sobre 97.905 pedidos reales: cohortes, recompra, Pareto de categor\u00edas, log\u00edstica y vendedores. Solo el 3 % de los clientes repite y un retraso de m\u00e1s de una semana hunde la nota de 4,3 a 1,7. 20 tests.",
+    findingsBtn: "Ver hallazgos",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Data Analyst Junior",
     projectsTitle: "Proyectos Destacados",
     moreReposTitle: "M\u00e1s Repositorios",
@@ -1327,6 +1341,10 @@ var translations = {
     proj11Tag: "Data product \u00b7 API",
     proj11Title: "\u00d3rbita \u2014 The space industry in numbers",
     proj11Desc: "Who launches into space and how reliably? 8,120 launches since 1957 from the Launch Library 2 API in SQLite, with automated weekly ingestion and a dashboard of agencies, rockets, astronauts and upcoming launches.",
+    proj12Tag: "SQL \u00b7 Business analysis",
+    proj12Title: "Olist in SQL \u2014 Real e-commerce",
+    proj12Desc: "Where does a marketplace's growth come from and what holds it back? 11 SQL queries on 97,905 real orders: cohorts, repeat purchases, category Pareto, logistics and sellers. Only 3 % of customers buy again, and a delivery more than a week late drops the score from 4.3 to 1.7. 20 tests.",
+    findingsBtn: "See findings",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Junior Data Analyst",
     projectsTitle: "Featured Projects",
     moreReposTitle: "More Repositories",
@@ -1417,7 +1435,7 @@ function toggleTheme() {
 }
 
 (function() {
-  var excluded = ['steam-launch-radar', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'Guia-Pokemon-rojo-fuego-y-verde-hoja', 'clonador-de-voz', 'alvarodc093.github.io', 'alvarodc093-pixel'];
+  var excluded = ['steam-launch-radar', 'Olist-SQL-Analysis', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'Guia-Pokemon-rojo-fuego-y-verde-hoja', 'clonador-de-voz', 'alvarodc093.github.io', 'alvarodc093-pixel'];
   var langColors = {
     Python: '#3572A5', 'Jupyter Notebook': '#DA5B0B', JavaScript: '#f1e05a',
     HTML: '#e34c26', CSS: '#563d7c', TypeScript: '#3178c6', Shell: '#89e051',
@@ -1471,7 +1489,7 @@ var termCmds = {
   help: 'Comandos disponibles:\n  help     &mdash; muestra esta ayuda\n  whoami   &mdash; mi perfil\n  skills   &mdash; habilidades t&eacute;cnicas\n  projects &mdash; proyectos destacados\n  contact  &mdash; informaci&oacute;n de contacto\n  exit     &mdash; cerrar terminal',
   whoami: '&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior (BI). SQL, Python, Power BI y Microsoft Fabric. De la precisi&oacute;n dental al an&aacute;lisis de datos.',
   skills: 'SQL | Python | Pandas | Excel | Power BI | DAX | Power Query | Microsoft Fabric | Streamlit | Plotly | Jupyter | SQLite | APIs REST | ETL | scikit-learn | IA aplicada (LLM/RAG) | Git/GitHub',
-  projects: 'steam-launch-radar &mdash; steam-launch-radar.vercel.app\nenergia-solar &mdash; solar-espana.vercel.app\ngamescope &mdash; gamescope-comparador.vercel.app\norbita &mdash; orbita-espacio.vercel.app\nchurnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja\nclonador-de-voz &mdash; github.com/alvarodc093-pixel/clonador-de-voz',
+  projects: 'steam-launch-radar &mdash; steam-launch-radar.vercel.app\nolist-sql-analysis &mdash; github.com/alvarodc093-pixel/Olist-SQL-Analysis\nenergia-solar &mdash; solar-espana.vercel.app\ngamescope &mdash; gamescope-comparador.vercel.app\norbita &mdash; orbita-espacio.vercel.app\nchurnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja\nclonador-de-voz &mdash; github.com/alvarodc093-pixel/clonador-de-voz',
   contact: 'Email: alvarodc093@gmail.com\nTel: 642 783 118\nLinkedIn: linkedin.com/in/alvaro-domingo\nGitHub: github.com/alvarodc093-pixel',
   exit: 'Cerrando terminal...'
 };
