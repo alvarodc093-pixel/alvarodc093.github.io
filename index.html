@@ -1032,6 +1032,16 @@ footer {
         </div>
       </div>
       <div class="project-card">
+        <span class="project-tag" data-i18n="proj14Tag">Estad&iacute;stica &middot; Experimentaci&oacute;n</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj14Title">A/B test &mdash; &iquest;Funcionan los anuncios?</a></h3>
+        <p data-i18n="proj14Desc">Experimento con 588.101 usuarios: los anuncios suben la conversi&oacute;n un 43 % (IC 95 % +30 % a +58 %), confirmado con bootstrap, enfoque bayesiano y regresi&oacute;n log&iacute;stica. Solo el 30 % de las compras se deben a los anuncios y el efecto aparece a partir de 25 impresiones.</p>
+        <div class="tech-stack"><span>Python</span><span>SciPy</span><span>statsmodels</span><span>A/B testing</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test/blob/main/analisis.ipynb" target="_blank" rel="noopener" class="demo-btn" data-i18n="analysisBtn">Ver an&aacute;lisis</a>
+          <a href="https://github.com/alvarodc093-pixel/Marketing-AB-Test" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
         <span class="project-tag" data-i18n="proj9Tag">Series temporales &middot; ML</span>
         <h3><a href="https://github.com/alvarodc093-pixel/Energia-Solar" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj9Title">Solar Espa&ntilde;a &mdash; Previsi&oacute;n fotovoltaica</a></h3>
         <p data-i18n="proj9Desc">&iquest;Cu&aacute;nta energ&iacute;a solar producir&aacute; Espa&ntilde;a ma&ntilde;ana? Datos de REE y Open-Meteo, 5 modelos comparados con 3 baselines (el mejor acierta el 84,5 %) y una app que predice el d&iacute;a siguiente con la previsi&oacute;n real. Datos y modelo se actualizan cada semana.</p>
@@ -1265,6 +1275,10 @@ var translations = {
     proj13Title: "Contoso Retail \u2014 Ventas en Power BI",
     proj13Desc: "\u00bfC\u00f3mo van las ventas de una cadena de tiendas frente al a\u00f1o anterior y al presupuesto? Informe de 5 p\u00e1ginas con modelo en estrella y 28 medidas DAX sobre 224.000 ventas: 2025 cae un 7,5 %, cumple el 85,7 % del objetivo y el online ya vende m\u00e1s que todas las tiendas f\u00edsicas.",
     screensBtn: "Ver capturas",
+    proj14Tag: "Estad\u00edstica \u00b7 Experimentaci\u00f3n",
+    proj14Title: "A/B test \u2014 \u00bfFuncionan los anuncios?",
+    proj14Desc: "Experimento con 588.101 usuarios: los anuncios suben la conversi\u00f3n un 43 % (IC 95 % +30 % a +58 %), confirmado con bootstrap, enfoque bayesiano y regresi\u00f3n log\u00edstica. Solo el 30 % de las compras se deben a los anuncios y el efecto aparece a partir de 25 impresiones.",
+    analysisBtn: "Ver an\u00e1lisis",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Data Analyst Junior",
     projectsTitle: "Proyectos Destacados",
     moreReposTitle: "M\u00e1s Repositorios",
@@ -1363,6 +1377,10 @@ var translations = {
     proj13Title: "Contoso Retail \u2014 Sales in Power BI",
     proj13Desc: "How are a retail chain's sales doing against last year and the budget? A 5-page report with a star schema and 28 DAX measures on 224,000 sales: 2025 is down 7.5 %, reaches 85.7 % of budget, and the online store now sells more than all physical stores.",
     screensBtn: "See screenshots",
+    proj14Tag: "Statistics \u00b7 Experimentation",
+    proj14Title: "A/B test \u2014 Do the ads work?",
+    proj14Desc: "Experiment with 588,101 users: ads lift conversion by 43 % (95 % CI +30 % to +58 %), confirmed with bootstrap, a Bayesian model and logistic regression. Only 30 % of purchases are caused by the ads, and the effect appears from 25 impressions upwards.",
+    analysisBtn: "See analysis",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Junior Data Analyst",
     projectsTitle: "Featured Projects",
     moreReposTitle: "More Repositories",
@@ -1453,7 +1471,7 @@ function toggleTheme() {
 }
 
 (function() {
-  var excluded = ['steam-launch-radar', 'Olist-SQL-Analysis', 'Contoso-Retail-PowerBI', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'Guia-Pokemon-rojo-fuego-y-verde-hoja', 'clonador-de-voz', 'alvarodc093.github.io', 'alvarodc093-pixel'];
+  var excluded = ['steam-launch-radar', 'Olist-SQL-Analysis', 'Contoso-Retail-PowerBI', 'Marketing-AB-Test', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'Guia-Pokemon-rojo-fuego-y-verde-hoja', 'clonador-de-voz', 'alvarodc093.github.io', 'alvarodc093-pixel'];
   var langColors = {
     Python: '#3572A5', 'Jupyter Notebook': '#DA5B0B', JavaScript: '#f1e05a',
     HTML: '#e34c26', CSS: '#563d7c', TypeScript: '#3178c6', Shell: '#89e051',
@@ -1507,7 +1525,7 @@ var termCmds = {
   help: 'Comandos disponibles:\n  help     &mdash; muestra esta ayuda\n  whoami   &mdash; mi perfil\n  skills   &mdash; habilidades t&eacute;cnicas\n  projects &mdash; proyectos destacados\n  contact  &mdash; informaci&oacute;n de contacto\n  exit     &mdash; cerrar terminal',
   whoami: '&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior (BI). SQL, Python, Power BI y Microsoft Fabric. De la precisi&oacute;n dental al an&aacute;lisis de datos.',
   skills: 'SQL | Python | Pandas | Excel | Power BI | DAX | Power Query | Microsoft Fabric | Streamlit | Plotly | Jupyter | SQLite | APIs REST | ETL | scikit-learn | IA aplicada (LLM/RAG) | Git/GitHub',
-  projects: 'steam-launch-radar &mdash; steam-launch-radar.vercel.app\nolist-sql-analysis &mdash; github.com/alvarodc093-pixel/Olist-SQL-Analysis\ncontoso-retail-powerbi &mdash; github.com/alvarodc093-pixel/Contoso-Retail-PowerBI\nenergia-solar &mdash; solar-espana.vercel.app\ngamescope &mdash; gamescope-comparador.vercel.app\norbita &mdash; orbita-espacio.vercel.app\nchurnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja\nclonador-de-voz &mdash; github.com/alvarodc093-pixel/clonador-de-voz',
+  projects: 'steam-launch-radar &mdash; steam-launch-radar.vercel.app\nolist-sql-analysis &mdash; github.com/alvarodc093-pixel/Olist-SQL-Analysis\ncontoso-retail-powerbi &mdash; github.com/alvarodc093-pixel/Contoso-Retail-PowerBI\nmarketing-ab-test &mdash; github.com/alvarodc093-pixel/Marketing-AB-Test\nenergia-solar &mdash; solar-espana.vercel.app\ngamescope &mdash; gamescope-comparador.vercel.app\norbita &mdash; orbita-espacio.vercel.app\nchurnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja\nclonador-de-voz &mdash; github.com/alvarodc093-pixel/clonador-de-voz',
   contact: 'Email: alvarodc093@gmail.com\nTel: 642 783 118\nLinkedIn: linkedin.com/in/alvaro-domingo\nGitHub: github.com/alvarodc093-pixel',
   exit: 'Cerrando terminal...'
 };
