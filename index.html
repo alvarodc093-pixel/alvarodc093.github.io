@@ -929,6 +929,7 @@ footer {
         <h3 data-i18n="skillCat4">Datos, IA y herramientas</h3>
         <div class="skills-tags">
           <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">dbt</span>
           <span class="skill-tag">APIs REST</span>
           <span class="skill-tag">ETL &amp; Data Cleaning</span>
           <span class="skill-tag">Machine learning (scikit-learn)</span>
@@ -980,6 +981,16 @@ footer {
         <div class="card-actions">
           <a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM/blob/main/analisis.ipynb" target="_blank" rel="noopener" class="demo-btn" data-i18n="analysisBtn">Ver an&aacute;lisis</a>
           <a href="https://github.com/alvarodc093-pixel/Customer-Segmentation-RFM" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <span class="project-tag" data-i18n="proj16Tag">Ingenier&iacute;a anal&iacute;tica &middot; dbt</span>
+        <h3><a href="https://github.com/alvarodc093-pixel/CitiBike-dbt-Analytics" target="_blank" rel="noopener" style="color:inherit;text-decoration:none" data-i18n="proj16Title">Citi Bike: pipeline de datos con dbt</a></h3>
+        <p data-i18n="proj16Desc">&iquest;D&oacute;nde se acumulan las bicis y qu&eacute; frena la demanda? 14 modelos dbt por capas sobre 972.000 viajes reales y meteorolog&iacute;a, con hecho incremental, contrato de datos y 61 tests. 9 estaciones acumulan ~240 bicis cada ma&ntilde;ana laborable y la lluvia fuerte resta un 35 % de los viajes.</p>
+        <div class="tech-stack"><span>dbt</span><span>DuckDB</span><span>SQL</span><span>Modelo en estrella</span><span>GitHub Actions</span></div>
+        <div class="card-actions">
+          <a href="https://alvarodc093-pixel.github.io/CitiBike-dbt-Analytics/" target="_blank" rel="noopener" class="demo-btn" data-i18n="docsBtn">Ver docs y linaje</a>
+          <a href="https://github.com/alvarodc093-pixel/CitiBike-dbt-Analytics" target="_blank" rel="noopener" class="repo-link" data-i18n="repoBtn">Ver repositorio</a>
         </div>
       </div>
       <div class="project-card">
@@ -1282,8 +1293,12 @@ var translations = {
     proj14Title: "A/B test \u2014 \u00bfFuncionan los anuncios?",
     proj14Desc: "Experimento con 588.101 usuarios: los anuncios suben la conversi\u00f3n un 43 % (IC 95 % +30 % a +58 %), confirmado con bootstrap, enfoque bayesiano y regresi\u00f3n log\u00edstica. Solo el 30 % de las compras se deben a los anuncios y el efecto aparece a partir de 25 impresiones.",
     analysisBtn: "Ver an\u00e1lisis",
+    docsBtn: "Ver docs y linaje",
     proj15Tag: "Clientes \u00b7 CLV",
     proj15Title: "Segmentaci\u00f3n RFM y valor de vida del cliente",
+    proj16Tag: "Ingenier\u00eda anal\u00edtica \u00b7 dbt",
+    proj16Title: "Citi Bike: pipeline de datos con dbt",
+    proj16Desc: "\u00bfD\u00f3nde se acumulan las bicis y qu\u00e9 frena la demanda? 14 modelos dbt por capas sobre 972.000 viajes reales y meteorolog\u00eda, con hecho incremental, contrato de datos y 61 tests. 9 estaciones acumulan ~240 bicis cada ma\u00f1ana laborable y la lluvia fuerte resta un 35 % de los viajes.",
     proj15Desc: "\u00bfA qu\u00e9 clientes cuidar, recuperar o dejar? 10 segmentos RFM sobre 5.852 clientes de una tienda online y valor de vida con BG/NBD + Gamma-Gamma programados desde cero. Validado en 6 meses no vistos: acierta las compras con un 2 % de error y su top 20 % concentra el 73 % del gasto real.",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Data Analyst Junior",
     projectsTitle: "Proyectos Destacados",
@@ -1388,8 +1403,12 @@ var translations = {
     proj14Title: "A/B test \u2014 Do the ads work?",
     proj14Desc: "Experiment with 588,101 users: ads lift conversion by 43 % (95 % CI +30 % to +58 %), confirmed with bootstrap, a Bayesian model and logistic regression. Only 30 % of purchases are caused by the ads, and the effect appears from 25 impressions upwards.",
     analysisBtn: "See analysis",
+    docsBtn: "See docs & lineage",
     proj15Tag: "Customers \u00b7 CLV",
     proj15Title: "RFM segmentation and customer lifetime value",
+    proj16Tag: "Analytics engineering \u00b7 dbt",
+    proj16Title: "Citi Bike: a dbt data pipeline",
+    proj16Desc: "Where do bikes pile up and what holds demand back? 14 layered dbt models on 972,000 real trips plus weather, with an incremental fact table, a data contract and 61 tests. 9 stations absorb ~240 bikes every weekday morning and heavy rain cuts trips by 35 %.",
     proj15Desc: "Which customers to nurture, win back or let go? 10 RFM segments for 5,852 customers of an online store, plus lifetime value with BG/NBD + Gamma-Gamma built from scratch. Validated on 6 unseen months: purchases predicted within 2 %, and its top 20 % captures 73 % of real spend.",
     footer: "\u00a9 2026 \u00c1lvaro Domingo Cord\u00f3n \u2014 Junior Data Analyst",
     projectsTitle: "Featured Projects",
@@ -1483,7 +1502,7 @@ function toggleTheme() {
 }
 
 (function() {
-  var excluded = ['steam-launch-radar', 'Olist-SQL-Analysis', 'Contoso-Retail-PowerBI', 'Marketing-AB-Test', 'Customer-Segmentation-RFM', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'alvarodc093.github.io', 'alvarodc093-pixel'];
+  var excluded = ['steam-launch-radar', 'Olist-SQL-Analysis', 'Contoso-Retail-PowerBI', 'Marketing-AB-Test', 'Customer-Segmentation-RFM', 'CitiBike-dbt-Analytics', 'Energia-Solar', 'GameScope', 'Orbita', 'Churnguard-Player-Retention', 'Twitch-Audience-Analytics', 'Video-Game-Market-Analysis', 'Datajob', 'Video-Game-Rag-Assistant', 'alvarodc093.github.io', 'alvarodc093-pixel'];
   var langColors = {
     Python: '#3572A5', 'Jupyter Notebook': '#DA5B0B', JavaScript: '#f1e05a',
     HTML: '#e34c26', CSS: '#563d7c', TypeScript: '#3178c6', Shell: '#89e051',
@@ -1537,7 +1556,7 @@ var termCmds = {
   help: 'Comandos disponibles:\n  help     &mdash; muestra esta ayuda\n  whoami   &mdash; mi perfil\n  skills   &mdash; habilidades t&eacute;cnicas\n  projects &mdash; proyectos destacados\n  contact  &mdash; informaci&oacute;n de contacto\n  exit     &mdash; cerrar terminal',
   whoami: '&Aacute;lvaro Domingo Cord&oacute;n &mdash; Data Analyst Junior (BI). SQL, Python, Power BI y Microsoft Fabric. De la precisi&oacute;n dental al an&aacute;lisis de datos.',
   skills: 'SQL | Python | Pandas | Excel | Power BI | DAX | Power Query | Microsoft Fabric | Streamlit | Plotly | Jupyter | SQLite | APIs REST | ETL | scikit-learn | IA aplicada (LLM/RAG) | Git/GitHub',
-  projects: 'steam-launch-radar &mdash; steam-launch-radar.vercel.app\nolist-sql-analysis &mdash; github.com/alvarodc093-pixel/Olist-SQL-Analysis\ncontoso-retail-powerbi &mdash; github.com/alvarodc093-pixel/Contoso-Retail-PowerBI\nmarketing-ab-test &mdash; github.com/alvarodc093-pixel/Marketing-AB-Test\ncustomer-segmentation-rfm &mdash; github.com/alvarodc093-pixel/Customer-Segmentation-RFM\nenergia-solar &mdash; solar-espana.vercel.app\ngamescope &mdash; gamescope-comparador.vercel.app\norbita &mdash; orbita-espacio.vercel.app\nchurnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja\nclonador-de-voz &mdash; github.com/alvarodc093-pixel/clonador-de-voz',
+  projects: 'steam-launch-radar &mdash; steam-launch-radar.vercel.app\nolist-sql-analysis &mdash; github.com/alvarodc093-pixel/Olist-SQL-Analysis\ncontoso-retail-powerbi &mdash; github.com/alvarodc093-pixel/Contoso-Retail-PowerBI\nmarketing-ab-test &mdash; github.com/alvarodc093-pixel/Marketing-AB-Test\ncustomer-segmentation-rfm &mdash; github.com/alvarodc093-pixel/Customer-Segmentation-RFM\ncitibike-dbt-analytics &mdash; alvarodc093-pixel.github.io/CitiBike-dbt-Analytics\nenergia-solar &mdash; solar-espana.vercel.app\ngamescope &mdash; gamescope-comparador.vercel.app\norbita &mdash; orbita-espacio.vercel.app\nchurnguard-player-retention &mdash; github.com/alvarodc093-pixel/Churnguard-Player-Retention\ntwitch-audience-analytics &mdash; github.com/alvarodc093-pixel/Twitch-Audience-Analytics\nvideo-game-market-analysis &mdash; github.com/alvarodc093-pixel/Video-Game-Market-Analysis\ndatajob &mdash; github.com/alvarodc093-pixel/Datajob\nvideo-game-rag-assistant &mdash; github.com/alvarodc093-pixel/Video-Game-Rag-Assistant\nguia-pokemon-rojo-fuego-y-verde-hoja &mdash; github.com/alvarodc093-pixel/Guia-Pokemon-rojo-fuego-y-verde-hoja\nclonador-de-voz &mdash; github.com/alvarodc093-pixel/clonador-de-voz',
   contact: 'Email: alvarodc093@gmail.com\nTel: 642 783 118\nLinkedIn: linkedin.com/in/alvaro-domingo\nGitHub: github.com/alvarodc093-pixel',
   exit: 'Cerrando terminal...'
 };
