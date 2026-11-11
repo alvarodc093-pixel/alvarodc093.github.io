@@ -37,13 +37,17 @@ ES = {
         "dental digital (CAD/CAM), de donde traigo precisión, control de calidad y trato con el cliente."
     ),
     "habilidades": [
-        ("SQL", "CTEs, funciones de ventana, cohortes, controles de calidad de datos · DuckDB, SQLite"),
+        ("SQL", "CTEs, funciones de ventana, cohortes, controles de calidad de datos · DuckDB, SQLite, dbt"),
         ("Python", "Pandas, NumPy, SciPy, statsmodels, scikit-learn, Matplotlib, Plotly, Streamlit"),
         ("Business Intelligence", "Power BI (modelo en estrella, DAX, Power Query), Excel, Microsoft Fabric"),
         ("Estadística", "A/B testing, intervalos de confianza, bootstrap, enfoque bayesiano, regresión logística, CLV"),
         ("Buenas prácticas", "Git y GitHub, GitHub Actions (CI), pytest, APIs REST, ETL, LLM y RAG"),
     ],
     "proyectos": [
+        ("Steam Launch Radar — proyecto final", "Python · scikit-learn · Power BI · RAG", f"{GH}/steam-launch-radar", [
+            "De los datos a una app web en producción: estima las reseñas de un juego a 30 días con las de sus primeros 3, 7 o 14 días; 3.019 lanzamientos reales y validación por fecha.",
+            "Cuando el día 7 avisa de que un lanzamiento va «por debajo», acierta el 95 %. Incluye un asistente RAG que cita sus fuentes y un panel de Power BI.",
+        ]),
         ("Olist en SQL — análisis de un e-commerce real", "SQL · DuckDB", f"{GH}/Olist-SQL-Analysis", [
             "11 consultas sobre 97.905 pedidos: cohortes, recompra, Pareto de categorías, logística y vendedores; 13 controles de calidad y 20 tests.",
             "Hallazgos: solo el 3 % de los clientes repite y un retraso de más de 7 días baja la nota media de 4,3 a 1,7.",
@@ -52,19 +56,13 @@ ES = {
             "Informe de 5 páginas sobre 224.000 ventas: modelo en estrella y 28 medidas DAX (año anterior, acumulado, objetivo, clientes nuevos).",
             "Las medidas DAX se validaron contra SQL en los 10 años de datos. 2025: −7,5 % en ventas y 85,7 % del objetivo.",
         ]),
-        ("A/B test de una campaña de anuncios", "Python · SciPy · statsmodels", f"{GH}/Marketing-AB-Test", [
-            "588.101 usuarios: +43 % de conversión (IC 95 %: +30 % a +58 %) con test z, bootstrap y enfoque bayesiano, ajustado con regresión logística.",
-            "Solo el 30 % de las compras se deben a los anuncios y el efecto aparece desde 25 impresiones; CPM máximo rentable.",
-        ]),
         ("Segmentación RFM y valor de vida del cliente", "Python · Pandas · SciPy", f"{GH}/Customer-Segmentation-RFM", [
             "10 segmentos con acción para 5.852 clientes; modelos BG/NBD y Gamma-Gamma programados desde cero.",
             "Validado en 6 meses no vistos: compras predichas con un 2 % de error; el top 20 % predicho concentra el 73 % del gasto real.",
         ]),
-        ("Steam Launch Radar — previsión de lanzamientos", "Python · scikit-learn · Next.js", f"{GH}/steam-launch-radar", [
-            "Estima las reseñas de un juego a 30 días con sus primeros días: 3.019 lanzamientos, validación por fecha y app web.",
-        ]),
-        ("Solar España — previsión fotovoltaica", "Python · scikit-learn · GitHub Actions", f"{GH}/Energia-Solar", [
-            "Previsión diaria con datos de REE y Open-Meteo: 84,5 % de acierto, mejora a 3 modelos de referencia y se reentrena cada semana.",
+        ("A/B test de una campaña de anuncios", "Python · SciPy · statsmodels", f"{GH}/Marketing-AB-Test", [
+            "588.101 usuarios: +43 % de conversión (IC 95 %: +30 % a +58 %) con test z, bootstrap y enfoque bayesiano, ajustado con regresión logística.",
+            "Solo el 30 % de las compras se deben a los anuncios y el efecto aparece desde 25 impresiones; CPM máximo rentable.",
         ]),
     ],
     "experiencia": [
@@ -103,13 +101,17 @@ EN = {
         "which taught me precision, quality control and client focus."
     ),
     "habilidades": [
-        ("SQL", "CTEs, window functions, cohorts, data quality checks · DuckDB, SQLite"),
+        ("SQL", "CTEs, window functions, cohorts, data quality checks · DuckDB, SQLite, dbt"),
         ("Python", "Pandas, NumPy, SciPy, statsmodels, scikit-learn, Matplotlib, Plotly, Streamlit"),
         ("Business Intelligence", "Power BI (star schema, DAX, Power Query), Excel, Microsoft Fabric"),
         ("Statistics", "A/B testing, confidence intervals, bootstrap, Bayesian analysis, logistic regression, CLV"),
         ("Engineering practices", "Git and GitHub, GitHub Actions (CI), pytest, REST APIs, ETL, LLMs and RAG"),
     ],
     "proyectos": [
+        ("Steam Launch Radar — capstone project", "Python · scikit-learn · Power BI · RAG", f"{GH}/steam-launch-radar", [
+            "From raw data to a production web app: predicts a game's 30-day reviews from its first 3, 7 or 14 days; 3,019 real launches and time-based validation.",
+            "When it flags a launch as \"below\" on day 7, it is right 95 % of the time. Includes a RAG assistant that cites its sources and a Power BI dashboard.",
+        ]),
         ("Olist in SQL — real e-commerce analysis", "SQL · DuckDB", f"{GH}/Olist-SQL-Analysis", [
             "11 queries on 97,905 orders: cohorts, repeat purchases, category Pareto, logistics and sellers; 13 data quality checks and 20 tests.",
             "Findings: only 3 % of customers buy again, and deliveries over 7 days late drop the average score from 4.3 to 1.7.",
@@ -118,19 +120,13 @@ EN = {
             "5-page report on 224,000 sales: star schema and 28 DAX measures (prior year, YTD, budget, new customers).",
             "DAX measures validated against SQL for all 10 years. 2025: sales −7.5 % and 85.7 % of budget.",
         ]),
-        ("A/B test of an ad campaign", "Python · SciPy · statsmodels", f"{GH}/Marketing-AB-Test", [
-            "588,101 users: +43 % conversion (95 % CI +30 % to +58 %) with z-test, bootstrap and Bayesian analysis; adjusted for group imbalance with logistic regression.",
-            "Only 30 % of purchases are incremental and the effect appears from 25 impressions; break-even CPM calculated.",
-        ]),
         ("RFM segmentation and customer lifetime value", "Python · Pandas · SciPy", f"{GH}/Customer-Segmentation-RFM", [
             "10 actionable segments for 5,852 customers; BG/NBD and Gamma-Gamma models implemented from scratch.",
             "Validated on 6 unseen months: purchases within 2 %; the predicted top 20 % captures 73 % of real spend.",
         ]),
-        ("Steam Launch Radar — launch forecasting", "Python · scikit-learn · Next.js", f"{GH}/steam-launch-radar", [
-            "Predicts a game's 30-day reviews from its first days; 3,019 launches, time-based validation, web app and automated monthly refresh.",
-        ]),
-        ("Solar Spain — solar power forecasting", "Python · scikit-learn · GitHub Actions", f"{GH}/Energia-Solar", [
-            "Daily forecast with REE and Open-Meteo data: 84.5 % accuracy, beats 3 baselines and retrains every week.",
+        ("A/B test of an ad campaign", "Python · SciPy · statsmodels", f"{GH}/Marketing-AB-Test", [
+            "588,101 users: +43 % conversion (95 % CI +30 % to +58 %) with z-test, bootstrap and Bayesian analysis; adjusted for group imbalance with logistic regression.",
+            "Only 30 % of purchases are incremental and the effect appears from 25 impressions; break-even CPM calculated.",
         ]),
     ],
     "experiencia": [
